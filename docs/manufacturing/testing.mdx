@@ -1,0 +1,61 @@
+---
+sidebar_position: 11
+sidebar_label: 'Testing'
+---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+# Testing
+
+Every Bus Pirate is lovingly tested by our crack team before it ships. The Bus Pirate firmware has a self-test that will help make sure no failed components are on the board before we ship.
+
+## Insert SD card
+
+- Insert an SD card. If **a formatted and mountable SD card is not inserted the SD card test will fail**. 
+
+:::caution
+The test will work without an SD card, but the SD card section of the self-test will fail.
+:::
+
+## Start the self-test
+
+<BrowserWindow>
+<span className="bp-prompt">HiZ></span> ~<br/>
+<span className="bp-info">SELF TEST STARTING<br/></span>
+</BrowserWindow>
+
+- Type ```~``` followed by ```enter```.
+
+## Press button when prompted
+<BrowserWindow>
+<span className="bp-info">
+PUSH BUTTON TO COMPLETE: OK<br/>
+</span><br/>
+</BrowserWindow>
+
+- Press the Bus Pirate button to complete the test. The Bus Pirate will pause and wait indefinitely. 
+
+## Results
+
+### Success
+
+<BrowserWindow>
+<span className="bp-info">
+<br/>
+PASS :)<br/>
+</span><br/>
+<span className="bp-prompt">HiZ></span> <br/>
+</BrowserWindow>
+
+### Error
+
+<BrowserWindow>
+<span className="bp-info">
+SD CARD: NOT DETECTED. ERROR!<br/>
+...<br/>
+ERRORS: 1<br/>
+FAIL! :(</span>
+</BrowserWindow>
+
+:::caution
+The test will work without an SD card, but the SD card section of the self-test will fail.
+:::
