@@ -1,0 +1,64 @@
+---
+sidebar_position: 2
+sidebar_label: 'Cables'
+---
+
+# Cables
+
+![](./img/cable-wire.jpg)
+
+All of the Bus Pirate cables are made with super soft and flexible premium silicone coated wire. The inner strands are very fine tinned copper. 22AWG has 60 strands 0.08mm thick (bottom), compared to 8-12 strands in common wires (top). The silicone coating has a very nice feel, and is tolerant of high heat and chemicals.
+
+## Probe Cable
+
+![](./img/cable-probe.jpg)
+
+|Pin|Wire Type|Wire Color|Wire Length|Shrink Type|Shrink Color|Shrink Manuf|Shrink Length|Shrink Text|Shrink Text Color|
+|-|-|-|-|-|-|-|-|-|-|
+|1|22AWG Silicone|Red|270mm|φ1.5mm|Red|Woer|20mm|VOUT VOUT|Black|
+|2|22AWG Silicone|Gray|270mm|φ1.5mm|Orange|Dongguan Sanlian|20mm|IO0 IO0|Black|
+|3|22AWG Silicone|Gray|270mm|φ1.5mm|Yellow|Woer|20mm|IO1 IO1|Black|
+|4|22AWG Silicone|Gray|270mm|φ1.5mm|Green|Dongguan Sanlian|20mm|IO2 IO2|Black|
+|5|22AWG Silicone|Gray|270mm|φ1.5mm|Blue|Dongguan Sanlian|20mm|IO3 IO3|Black|
+|6|22AWG Silicone|Gray|270mm|φ1.5mm|Purple|Dongguan Sanlian|20mm|IO4 IO4|Black|
+|7|22AWG Silicone|Gray|270mm|φ1.5mm|Brown|Dongguan Sanlian|20mm|IO5 IO5|Black|
+|8|22AWG Silicone|Gray|270mm|φ1.5mm|Gray|Woer|20mm|IO6 IO6|Black|
+|9|22AWG Silicone|Gray|270mm|φ1.5mm|White|Woer|20mm|IO7 IO7|Black|
+|10|22AWG Silicone|Black|270mm|φ1.5mm|Black|Woer|20mm|GND GND|White|
+
+### TJC8 connector
+Keyed, locking 2.54mm female connector. TJC8 or HX25418.
+
+### Unhoused 2.54mm crimps
+2.54mm 'DuPont' female crimps, without a housing. Many test probes will now accept a 2.54mm Dupont crimp housing, but many don't. The probe cable uses unhoused crimps wrapped with color coded, labeled shrink tube.
+
+### Printed Shrink Tube
+
+Shrink tube varies wildly in color quality. A lot of colors just don't pop: dull lifeless pastels or just too dark. We ended up sourcing from two manufacturers to get a reasonably nice set of colors. Woer is able to print on the shrink tube, and also printed on the tubes from Dongguan Sanlian.
+
+## Logic Analyzer Cable
+
+![](./img/cable-aux.jpg)
+
+|Pin|Wire Type|Wire Color|Wire Length|Connector 1| Connector 2|Bus Pirate Signal|
+|-|-|-|-|-|-|-|
+|1-8|30AWG Silicone|Gray|170mm|9pin 1.0mm 'SH', female|1pin 2.54mm 'DuPont', female|IO0-IO7|
+|9|30AWG Silicone|Black|170mm|-|1pin 2.54mm 'DuPont', female|Ground|
+
+## Y Splitter Cable
+
+![](./img/cable-y.jpg)
+
+|Pin|Wire Type|Wire Color|Wire Length|Connector 1| Connector 2|
+|-|-|-|-|-|-|
+|1|22AWG Silicone|Black/Red/Gray|170mm|1pin 2.54mm 'DuPont', female|2*1pin 2.54mm 'DuPont', female|
+
+## Jumper Cable
+
+![](./img/cable-jumpers.jpg)
+
+|Pin|Wire Type|Wire Color|Wire Length|Connector 1| Connector 2|
+|-|-|-|-|-|-|
+|1|22AWG Silicone|Black/Red/Gray|170mm|1pin 2.54mm 'DuPont', female|1pin 2.54mm 'DuPont', female|
+
+
