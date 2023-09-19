@@ -5,8 +5,10 @@ sidebar_label: 'Introduction'
 
 # Bus Pirate 5 Component Guide
 
-![](img/bp-rgb-dark.jpg)
+![](./img/bp-rgb-dark.jpg)
 
-![](img/pcb-front-pack.JPEG)
+![](./img/bp5-pcb-bottom.jpg)
+
+![](./img/bp5-pcb-top.jpg)
 
 
