@@ -5,6 +5,8 @@ sidebar_label: 'Bill of Materials'
 
 # Bill of Materials REV 8
 
+![](./img/bom-rev8.jpg)
+
 REV 8 was produced in a small prototype production batch (August 2023) and an initial production batch (September 2023). Check your Bus Pirate 5 PCB to find your revision number located near the SD card (bottom) and the 10 pin connector (top). We intend to move to REV 9 (BOM cleanup) as soon as validation and FCC testing are completed. There are no feature changes in REV 9, just tweaks to the supplier list.
 
 | Brand | Part | Package | Description| Reel Quantity | Supplier |
