@@ -7,7 +7,7 @@ sidebar_label: 'Introduction'
 
 ![](./img/bp-rgb-dark.jpg)
 
-Bus Pirate 5 is the latest edition of the original universal serial interface that hackers trust since 2008. Talking to chips and probing interfaces is more fun than ever!
+Bus Pirate 5 is the latest edition of the original universal serial interface trusted by hackers since 2008. Talking to chips and probing interfaces is more fun than ever!
 
 ## RP2040
 - Based on Raspberry Pi Foundation RP2040

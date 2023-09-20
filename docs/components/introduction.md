@@ -10,5 +10,3 @@ sidebar_label: 'Introduction'
 ![](./img/bp5-pcb-bottom.jpg)
 
 ![](./img/bp5-pcb-top.jpg)
-
-

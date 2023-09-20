@@ -67,3 +67,9 @@
 .bp-pre{
 	color: #FFFFFF;
 }
+
+.img-center {
+  display: flex;
+  justify-content: center;
+  width: 100%,
+} 
