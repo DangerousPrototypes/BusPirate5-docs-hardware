@@ -3,7 +3,7 @@ sidebar_position: 1
 sidebar_label: 'Introduction'
 ---
 
-# Bus Pirate 5 Hardware
+# Bus Pirate 5 Hardware Docs
 
 ![](./img/bp-rgb-dark.jpg)
 
