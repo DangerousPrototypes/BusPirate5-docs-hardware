@@ -7,7 +7,7 @@ sidebar_label: 'FDM Shell'
 
 ## FDM 3D printed shell
 
-![3D Printed case made from PETG](./img/enclosure-PETG.JPEG)
+![3D Printed case made from PETG](./img/enclosure-petg.jpg)
 
 |**Reference**  |**Value  **|**Quantity  **|**Rating**  |**Note  **|
 |-|-|-|-|-|
@@ -20,10 +20,10 @@ For large volumes it will be better to injection mold the case. The open source 
 
 ## M3 brass heat set knurled nuts (opposite direction knurling)
 
-![Knurled heat set brass nuts](./img/heatset-nut.jpg)![Dimensional drawing of heat set brass knurled nuts](./img/heatset-nut2.png)![FDM case with heat set nuts](./img/heat-set-inserts-bottom.JPEG)
+![Knurled heat set brass nuts](./img/heatset-nut.jpg)![Dimensional drawing of heat set brass knurled nuts](./img/heatset-nut2.png)![FDM case with heat set nuts](./img/heat-set-inserts-bottom.jpg)
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
 |Nuts  |M3x3mmLx4.5mmD|M3 brass heat set nut  |4  | |
 
-Opposite direction knurling  
+- Opposite direction knurling 
