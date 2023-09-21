@@ -22,9 +22,9 @@ Bus Pirate 5 is an open-source hardware debugging tool designed to eliminate the
 ## Bus Pirate 5 vs Bus Pirate v3
 ||Bus Pirate 5|Bus Pirate v3|
 |-|-|-|
-|**Cores**|2x32-bits @ 125MHz RP2040/ARM|16-bits @ 16MHz PIC 24FJ64GAA002 |
+|**Cores**|2x32-bits @ 125MHz RP2040/ARM|16-bits @ 16MHz PIC 24FJ64GA|
 |**Flash**|128Mbits|512Kbits|
-|**Magic peripheral**|RP2040 PIO units|PIC Peripheral Pin Select|
+|**Magic peripheral**|RP2040 PIO module|PIC Peripheral Pin Select|
 |**Terminal**|VT100 color with live statusbar|Monochrome ASCII|
 |**LEDs**| 16 RGB LEDs|4 LEDs|
 |**IO pins**| 8 IOs @ 1.2-5.0volts|6 IOs @ 3.3volts|
