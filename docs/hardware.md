@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 sidebar_label: 'Hardware'
+slug: /
 ---
 
 # Bus Pirate 5 Hardware
