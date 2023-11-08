@@ -36,7 +36,6 @@ Example:
 *   [AP2127K-ADJTRG1](https://item.szlcsc.com/97547.html "AP2127K-ADJTRG1 ") (Diodes INC)
 *   [MCP1824T-ADJE/OT](https://item.szlcsc.com/157049.html "MCP1824T-ADJE/OT ") (Microchip)
 
-
 MCP1824 was used for development, but it is more expensive and harder to source than the AP2127.
 
 :::warning

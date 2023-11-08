@@ -4,7 +4,7 @@ sidebar_label: 'Hardware'
 slug: /
 ---
 
-# Bus Pirate 5 Hardware
+# Bus Pirate 5 REV 9 Hardware
 
 ![](./img/bp-rgb-dark.jpg)
 
