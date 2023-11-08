@@ -33,11 +33,11 @@ REV 9 is the main production version (from November 2023). Check your Bus Pirate
 | TDK | MLZ1608M220WT000 | 0603| 22uH 155mA (surge) | 4000|SZLCSC|
 | FH(风华)  | CBW201209U300T | 0805| 1.5A Ferrite Bead| 4000|SZLCSC|Part, Manuf|
 | CBI (创基)| 1N4148WS T4| SOD-523 | 100V 150mA | 3000|CBI (创基)|Package|
-| YXC (扬兴晶振) | X322512MSB4SI| 3225| 12MHz ±10ppm 20pF| 3000|Navia|
 | CBI (创基)| 2N7002| SOT-23|NFET| 3000|CBI (创基)|
 | CBI (创基)| BC2301(2A) | SOT-523|PFET| 3000|CBI (创基)|Part, Package, Manuf|
-| DIODES(美台)| BCM857| SOT-363/SC-70-6 |Dual PNP matched pair| 3000|SZLCSC|
 | CBI (创基)| MMDT3906| SOT-363/SC-70-6 |Dual PNP| 3000|CBI (创基)|
+| DIODES(美台)| BCM857| SOT-363/SC-70-6 |Dual PNP matched pair| 3000|SZLCSC|
+| YXC (扬兴晶振) | X322512MSB4SI| 3225| 12MHz ±10ppm 20pF| 3000|Navia|
 | MICRONE(南京微盟) | ME6211A33PG-N | SOT-89-3|3.3V VREG| 1000|Navia|
 | DIODES(美台)| AP2127K-ADJTRG1| SOT-23-5|0.8V-5.5V 400mA VREG| 3000|Navia|
 | Gainsil(聚洵) | LMV321 | SOT-23-5|R2R op-amp| 3000||Part, Footprint, Manuf|
@@ -46,7 +46,7 @@ REV 9 is the main production version (from November 2023). Check your Bus Pirate
 | Raspberry Pi| RP2040| QFN-56|Microcontroller|500|SZLCSC|
 | Winbond | W25Q128JVSIQ| SOP-8 |128Mbit Flash|2000|SZLCSC|
 | I-CORE(中微爱芯) | AIP74HC595TA | TSSOP-16|Shift register| 2500|DXZH|Manuf|
-| I-CORE(中微爱芯) | AIP74HCT245TA| TSSOP-20|Level converter|2500|DXZH|Manuf|
+| I-CORE(中微爱芯) | AIP74HCT245TA| TSSOP-20|Level shifter|2500|DXZH|Manuf|
 | I-CORE(中微爱芯) | CD4067| TSSOP-24|16 channel analog mux| 2500|DXZH|Manuf, Part|
 | I-CORE(中微爱芯) | AIP74LVC1T45| SOT-363/SC-70-6 |Buffer| 3000|DXZH|Manuf|
 | CGL LED| SK6812-mini-e | |LED down facing|2000|CGL LED|
