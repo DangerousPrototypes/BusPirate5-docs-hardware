@@ -28,7 +28,7 @@ Bus Pirate 5 is an open-source hardware debugging tool designed to eliminate the
 |**Magic peripheral**|RP2040 PIO module|PIC Peripheral Pin Select|
 |**Terminal**|VT100 color with live statusbar|Monochrome ASCII|
 |**LEDs**| 16 RGB LEDs|4 LEDs|
-|**IO pins**| 8 IOs @ 1.2-5.0volts|6 IOs @ 3.3volts|
+|**IO pins**| 8 IOs @ 1.2-5.0volts|5 IOs @ 3.3volts|
 |**Pull-up resistors**| 8 pins|4 pins|
 |**Voltage measurement**|All pins| 1 ADC probe|
 |**Power supply**|1-5volts| 3.3volts, 5volts|
@@ -100,14 +100,16 @@ Care must be taken so the buffer and RP2040 don't draw excessive current from ea
 |SN74LVC1T45|Texas Instruments|1.65-5.5volts|
 |74LVC1T45|Diodes INC|1.65-5.5volts|
 |74LVC1T45|Nexperia|1.2-5.5volts|
+|AiP74LVC1T45|WuXi I-Core|1.2-5.5volts|
 
 At least three manufacturers make a 74LVC1T45 with slightly different specifications. They perform similarly, but the Nexperia part has a wider voltage range.
 
 |Hardware Revision|Buffer Chip|
 |-|-|
 |REV8| Texas Instruments|
+|REV9| WuXi I-Core|
 
-Current hardware is fitted with buffers made by Texas Instruments. For the past two years it was the only part that's been available, and for six months even the TI part was hard to find. In the future we'd like to switch to the Nexperia part for the wider operating range, or the Diodes INC part because it's significantly cheaper than the others. 
+Revision 9 is fitted with buffers made by WuXi I-Core, a Chinese domestically manufactured part that works down to 1.2 volts.
 
 ### Toggleable Pull-up Resistors
 
@@ -160,7 +162,7 @@ The bulldozer IO buffers run from 1.65 to 5volts, they need a power supply to ma
 
 [![](./img/bp5rev8/vreg.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
 
-The heart of the programmable power supply is a 0.8 to 5volt [adjustable output voltage regulator](voltage-regulators#adjustable-ldo-vreg-with-08v-to-50v-output-sot-23-5) (U403). Normally fixed resistor values set the output voltage of an adjustable regulator, but we've given it programmable output [by margining](https://e2e.ti.com/blogs_/archives/b/precisionhub/posts/give-your-voltage-regulator-the-margin-it-deserves) the feedback pin with an RP2040 pulse width modulator. The PWM output of the RP2040 is filtered through a 10K resistor (R414) and 100nF capacitor (C415), then buffered with an op-amp (U603).
+The heart of the programmable power supply is a 0.8 to 5volt [adjustable output voltage regulator](components/voltage-regulators#adjustable-ldo-vreg-with-08v-to-50v-output-sot-23-5) (U403). Normally fixed resistor values set the output voltage of an adjustable regulator, but we've given it programmable output [by margining](https://e2e.ti.com/blogs_/archives/b/precisionhub/posts/give-your-voltage-regulator-the-margin-it-deserves) the feedback pin with an RP2040 pulse width modulator. The PWM output of the RP2040 is filtered through a 10K resistor (R414) and 100nF capacitor (C415), then buffered with an op-amp (U603).
 
 Older adjustable voltage regulators typically have a range from 1.25 to 5volts or more. A newer class of regulators go a bit lower - down to 0.8volts. 
 
