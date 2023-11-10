@@ -44,24 +44,21 @@ Examples:
 *   [2N7002](https://item.szlcsc.com/9040.html "2N7002 7002 ") (CJ) 
 *   [2N7002K-7](https://item.szlcsc.com/86219.html) (Diodes INC)
 
-## PMOS FET 2A+ Vgs>=-2 volts SOT-23 
+## PMOS FET 2A+ Vgs>=-1 volts SOT-523 
 
 ![](./img/fet-400.png)
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-|Q402 Q602|SOT-23|PMOS FET (WST3423)|2|\>=2A|Vgs>=-1 volts, Pd>=300mW, RDSon<=150mOhms|
+|Q402 Q602|SOT-523|PMOS FET (SI2301)|2|\>=2A|Vgs>=-1 volts, Pd>=300mW, RDSon<=150mOhms|
 
-Any P-channel MOSFET with similar pinout capable of switching 2A+ with a low Vgs (-1 volts max) will work. On-state resistance should be low, under 150mOhms. Power dissipation is only around 50mW depending on the on-state resistance, so most parts will work (Pd>=300mW).
+Any P-channel MOSFET with similar pinout capable of switching 2A+ with a low Vgs (-1 volts max) will work. On-state resistance should be low, under 150mOhms. Power dissipation is only around 50mW depending on the on-state resistance, so most parts will work (Pd>=300mW). 
 
-Examples:
+Generic part number SI2301 is available from multiple manufacturers, but the SOT-523 may be a special order package.
 
-* [SI2301](https://item.szlcsc.com/3431368.html) (KUU) 
-* [PMV65XPER](https://item.szlcsc.com/574110.html) (Nexperia) 
-* [PMV65XP,215](https://item.szlcsc.com/76686.html "PMV65XP,215 ") (Nexperia) 
-* [PMV65XPEA](https://item.szlcsc.com/190842.html "PMV65XPEA ") (Nexperia) 
-* [WST3427](https://item.szlcsc.com/761883.html "WST3427 ") (Winsok)
-* [WST3423](https://item.szlcsc.com/159676.html "WST3423 ") (Winsok)
+Example:
+
+* BC2301(2A) (CBI)
 
 ## Dual PNP transistor general purpose SOT-363/SC-70-6
 

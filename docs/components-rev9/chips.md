@@ -15,7 +15,7 @@ sidebar_label: 'Chips'
 
 Raspberry Pi RP2040 microcontroller in QFN-56 package.
 
-## Flash 128mbit SPI, SOIC8-208mil
+## Flash 128mbit SPI SOIC8-208mil
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
@@ -39,29 +39,22 @@ Raspberry Pi RP2040 microcontroller in QFN-56 package.
 *   [74LVC1T45GW,125](https://item.szlcsc.com/485235.html) (Nexperia)
 *   [SN74LVC1T45DCK](https://item.szlcsc.com/9911.html) (TI) 
 
-## 74HC(T)4066 analog switch TSSOP-14
+## CD4067 analog mux TSSOP-24
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-|U309, U310|TSSOP-14|74HC4066/74HCT4066  |2  ||Can use HC or HCT  |
+|U402|TSSOP-24|CD4067 |1  ||tPHL ~30ns (60ns max) @ 5V |
 
-74HC4066 or 74HCT4066 may be used, whichever is cheaper. Any manufacturer.
-
-## 74HC(T)4067 analog mux TSSOP-24
-
-|**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
-|-|-|-|-|-|-|
-|U402|TSSOP-24|74HC4067/74HCT4067  |1  ||Can use HC or HCT. HC is always cheaper  |
-
-74HC4067 or 74HCT4067 may be used, whichever is cheaper. Any manufacturer.
+Multiple manufacturers make an updated CD4067 that is much faster than old CD logic, and even faster than 74HC/74HCT. The high to low (and low to high) propagation delay should be in the neighborhood of 30ns (60ns max) at 5 volts.
 
 :::tip
-The 'HC' version is almost always significantly cheaper.
+74HC4067 or 74HCT4067 can be used, but CD4067 is much cheaper and more available. Just be sure that the CD4067 is an updated version, not an original 1970-1990 vintage part.
 :::
 
 Example:
 
-*   [74HC4067PW,118](https://item.szlcsc.com/190720.html) (Nexperia)
+*   [CD4067](https://item.szlcsc.com/8436782.html) (HG Semi)
+*   [CD4067](https://item.szlcsc.com/8414592.html) (I-Core)
 
 ## 74HC595 shift register TSSOP-16
 
@@ -91,7 +84,6 @@ Example:
 :::warning
 Must use "HCT" version  
 :::
-
 
 Example:
 

@@ -3,7 +3,7 @@ sidebar_position: 1
 sidebar_label: 'Introduction'
 ---
 
-# Bus Pirate 5 Component Guide REV 8
+# Bus Pirate 5 Component Guide REV9
 
 ![](./img/bp-rgb-dark.jpg)
 
