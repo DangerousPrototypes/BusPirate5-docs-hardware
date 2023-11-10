@@ -7,15 +7,15 @@ sidebar_label: 'Connectors'
 
 ![](./img/connectors.jpg)
 
-## Micro SD Card Socket
+## TF flash card Socket
 
 ![sd](./img/sdcard.jpg "sd")
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-|J101|TF-01A|Micro SD card connector|1||
+|J101|TF-01A|TF flash card connector|1||
 
-Any manufacturer micro SD card socket in the most common package.
+Any manufacturer TF flash card socket in the most common package.
 
 Example:
 

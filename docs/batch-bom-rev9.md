@@ -5,7 +5,7 @@ sidebar_label: 'Bill  of Materials'
 
 # Bill of Materials REV 9
 
-REV 9 is the main production version (from November 2023). Check your Bus Pirate 5 PCB to find your revision number located near the SD card (bottom) and the 10 pin connector (top). REV 9 has tweaks to the supplier list to use cheaper and better available parts.
+REV 9 is the main production version (from November 2023). Check your Bus Pirate 5 PCB to find your revision number located near the TF flash card (bottom) and the 10 pin connector (top). REV 9 has tweaks to the supplier list to use cheaper and better available parts.
 
 | Brand | Part | Package | Description| Reel Quantity | Supplier |Changes|
 |-|-|-|-|-|-|-|
@@ -55,7 +55,7 @@ REV 9 is the main production version (from November 2023). Check your Bus Pirate
 |KAIDI|TJC8-10AW| | 1x10 P2.54mm horizontal male|1000|KAIDI|
 | SZWG |1x03 P2.54mm vertical female| | 1x03 P2.54mm vertical female| |SZWG|
 |SZYC| 1.0-9P WT|Tube|1x09 P1.00mm horizontal male| |SZYC|
-|YUANDI(元迪)|TF-01A| |SD card socket|1000|YUANDI(元迪)|
+|YUANDI(元迪)|TF-01A| |TF flash card socket|1000|YUANDI(元迪)|
 |SHOU HAN(首韩)| TYPE-C-31-M-12| |USB C 16P|1000|SHOU HAN(首韩)|
 |SHOU HAN(首韩)| TS3425BA 098 2.5H 250gf|4.2x3.4x2.5mm|4x3x2.5H button 250gf|3000|SHOU HAN(首韩)|
 |SHOU HAN(首韩)| TS3315A 250gf 025 |3.3x3.3x1.5mm|3x3x2.5H button 250gf|4000|SHOU HAN(首韩)|

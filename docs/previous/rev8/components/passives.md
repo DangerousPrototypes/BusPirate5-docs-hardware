@@ -99,7 +99,7 @@ Several manufacturers make a 1N4148 diode and also several of the transistors in
 |-|-|-|-|-|-|
 |L100|0603|22uH|1|>=50mA (>=150mA surge)|
 
-This inductor prevents brown out resets due to voltage level drop when an SD card is inserted into the socket. It should be 22uH (typically ~+/-25%) capable of 50mA current or greater. If there is a surge current rating it's best to look for >=150mA, but this isn't always specified and SD cards generally use well under 40mA. The other values are not critical.
+This inductor prevents brown out resets due to voltage level drop when an TF flash card is inserted into the socket. It should be 22uH (typically ~+/-25%) capable of 50mA current or greater. If there is a surge current rating it's best to look for >=150mA, but this isn't always specified and TF flash cards generally use well under 40mA. The other values are not critical.
 
 **Any manufacturer is fine** if you can find it, this is an example:
 

@@ -4,7 +4,7 @@ sidebar_label: 'Hardware'
 slug: /
 ---
 
-# Bus Pirate 5 REV 9 Hardware
+# Bus Pirate 5 REV 8 Hardware
 
 ![](./img/bp-rgb-dark.jpg)
 
@@ -35,7 +35,7 @@ Bus Pirate 5 is an open-source hardware debugging tool designed to eliminate the
 |**Current sense**|0-500mA|-|
 |**Programmable fuse**|0-500mA|-|
 |**Display**| 320x240 IPS all-angle|-|
-|**SD storage**| up to 64GB| -|
+|**TF flash card storage**| up to 64GB| -|
 
 <div class="img-center">
 
@@ -76,7 +76,7 @@ The RP2040 only has 4 analog to digital converter inputs, so we tossed on a 16 c
 To avoid interfering with digital signals while measuring them, the mux output is buffered by an [op-amp](components/analog#op-amp-rail-to-rail-sot-23-5) (U404) before being divided by 2 with a pair of [10K resistors](components/passives#resistors-1-0402) (R406/R407). All those 330R series input resistors are intended to limit back powering to tolerable levels.
 
 :::info
-Due to a lack of inputs on the RP2040, SD card detect and over current detect are digital signals measured through the analog mux.
+Due to a lack of inputs on the RP2040, TF flash card detect and over current detect are digital signals measured through the analog mux.
 :::
 
 ## 8 IO Units
@@ -239,27 +239,27 @@ While the adjustable voltage regulator is capable of 0.8 to 5.0volt output, the 
 R408/R409 are two 33K resistors instead of a single resistor. This was done to reduce the number of parts in the BOM and save a pick and place feeder during development.
 :::
 
-## Micro SD Card Socket
+## TF flash card Socket
 
 [![](./img/bp5rev8/sdcard.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
 
-A [micro SD card socket](components/connectors#micro-sd-card-socket) is connected to the RP2040 via an SPI bus shared with the LCD and 74HC595 IO expanders. A [22uH inductor](components/passives#inductor-22uh-50ma-0603) (L100) helps prevent brown out resets caused by inrush current when a card is inserted. 
+A [TF flash card socket](components/connectors#micro-sd-card-socket) is connected to the RP2040 via an SPI bus shared with the LCD and 74HC595 IO expanders. A [22uH inductor](components/passives#inductor-22uh-50ma-0603) (L100) helps prevent brown out resets caused by inrush current when a card is inserted. 
 
 ![](./img/json-config.png)
 
-SD card storage is used to save global and mode configuration preferences in simple JSON files. It can also be used for all kinds of interesting things, like firmware storage for production programming, saving dumps from flash chips and EEPROMs or logging bus communications. It will be interesting to see what the community comes up with.
+TF flash card storage is used to save global and mode configuration preferences in simple JSON files. It can also be used for all kinds of interesting things, like firmware storage for production programming, saving dumps from flash chips and EEPROMs or logging bus communications. It will be interesting to see what the community comes up with.
 
 :::info
-The SD card appears as a readable and writable USB disk drive, however the speed is very low because there aren't enough RP2040 pins to implement a full SD card interface.
+The TF flash card appears as a readable and writable USB disk drive, however the speed is very low because there aren't enough RP2040 pins to implement a full TF flash card interface.
 :::
 
 ## LCD
 
 [![](./img/bp5rev8/lcd.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
 
-A beautiful 240x320 pixel color [IPS (all angle viewing) LCD](components/leds#lcd-20-ips-lcd-240x320-st7789v-with-spi-interface-qt200h1201) acts as a pin label, displays the voltage on each pin and shows the current used by the programmable power supply unit. The LCD shares an SPI bus with the SD card and 74HC595 IO expanders. The display is already FCC certified, which doesn't exempt us from certification, but a bad LCD can spray radiation all over the spectrum causing us to fail.
+A beautiful 240x320 pixel color [IPS (all angle viewing) LCD](components/leds#lcd-20-ips-lcd-240x320-st7789v-with-spi-interface-qt200h1201) acts as a pin label, displays the voltage on each pin and shows the current used by the programmable power supply unit. The LCD shares an SPI bus with the TF flash card and 74HC595 IO expanders. The display is already FCC certified, which doesn't exempt us from certification, but a bad LCD can spray radiation all over the spectrum causing us to fail.
 
-The display is happy working at the maximum possible SPI speed of the RP2040. Unfortunately, SD cards become misconfigured when SPI is run above 32MHz so we have to settle for half speed. A lot of the limitations we encountered in this design result from the very low pin count of the RP2040. With an additional 16 or 32 pins, each SPI peripheral could sit on a separate bus and life on the board would be much happier.
+The display is happy working at the maximum possible SPI speed of the RP2040. Unfortunately, TF flash cards become misconfigured when SPI is run above 32MHz so we have to settle for half speed. A lot of the limitations we encountered in this design result from the very low pin count of the RP2040. With an additional 16 or 32 pins, each SPI peripheral could sit on a separate bus and life on the board would be much happier.
 
 :::info
 The background image is a bitmap converted to a C byte array and included in the firmware. Several open source font sets were converted to bitmaps to power the display.
@@ -305,7 +305,7 @@ Previous revisions had three buttons (up/ok/down) to control a menu on the LCD. 
 
 </div>
 
-Bus Pirate 5 is used through a serial terminal. The optional VT100 mode supports color and a live statusbar view of the function and voltage on each pin, such as frequency generation and measurement. If an SD card is inserted, the Bus Pirate will save your terminal preferences for the next session.
+Bus Pirate 5 is used through a serial terminal. The optional VT100 mode supports color and a live statusbar view of the function and voltage on each pin, such as frequency generation and measurement. If an TF flash card is inserted, the Bus Pirate will save your terminal preferences for the next session.
 
 ## Other Documentation
 Bus Pirate 5 documentation is broken into [hardware](https://hardware.buspirate.com/introduction) and [firmware](https://firmware.buspirate.com/introduction) sections so it can be versioned easily with each update. Here's some other fun stuff you might enjoy.
