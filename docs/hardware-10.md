@@ -10,7 +10,7 @@ slug: /
 
 Bus Pirate 5 is an open-source hardware debugging tool designed to eliminate the frustrations and challenges commonly associated with hacking and hardware tinkering. We tried to tackle all the pain points, from bizarre and uncomfortable acrobatics with multimeter probes to the hassle of connecting multiple test hooks to a single pin. With Bus Pirate 5, information you need is right where you need it.
 
-- **Bulldozer buffered IO** - 1.65 to 5volt direct interfacing with 8 bidirectional buffered IOs
+- **Bulldozer buffered IO** - 1.2 to 5volt direct interfacing with 8 bidirectional buffered IOs
 - **Voltage measurement extravaganza** - Bus Pirate 5 displays voltage readings for every pin, right on its vibrant LCD screen and in the terminal statusbar
 - **Current measurement** - Gain insights into the status of a device by monitoring current usage in real time
 - **Programmable power supply** - 1 to 5volt output, 400mA max, for powering all kinds of devices
@@ -27,7 +27,7 @@ Bus Pirate 5 is an open-source hardware debugging tool designed to eliminate the
 |**Flash**|128Mbits|512Kbits|
 |**Magic peripheral**|RP2040 PIO module|PIC Peripheral Pin Select|
 |**Terminal**|VT100 color with live statusbar|Monochrome ASCII|
-|**LEDs**| 16 RGB LEDs|4 LEDs|
+|**LEDs**| 18 RGB LEDs|4 LEDs|
 |**IO pins**| 8 IOs @ 1.2-5.0volts|5 IOs @ 3.3volts|
 |**Pull-up resistors**| 8 pins|4 pins|
 |**Voltage measurement**|All pins| 1 ADC probe|
@@ -83,11 +83,11 @@ Due to a lack of inputs on the RP2040, TF flash card detect and over current det
 
 [![](./img/bp5rev8/buffers.jpg)](./img/bp5rev8/BusPirate-5-rev8.pdf)
 
-### 1.65-5volt Buffers
+### 1.2-5volt Buffers
 
 [![](./img/bp5rev8/buffer-detail.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
 
-IO pins are fitted with [74LVC1T45 bidirectional buffers](components/chips#74lvc1t45-bi-directional-buffer-sc70-6sot363), we call this chip 'the bulldozer'. Half of the buffer is powered at 3.3volts to interface the RP2040. The other half is powered from the VREF/VOUT pin at 1.65-5volts to interface with the outside world. 74LVC1T45 has great specs for hacking, like 5.5volt tolerant pins and a feature that disables everything when either half of the buffer is unpowered.
+IO pins are fitted with [74LVC1T45 bidirectional buffers](components/chips#74lvc1t45-bi-directional-buffer-sc70-6sot363), we call this chip 'the bulldozer'. Half of the buffer is powered at 3.3volts to interface the RP2040. The other half is powered from the VREF/VOUT pin at 1.2-5volts to interface with the outside world. 74LVC1T45 has great specs for hacking, like 5.5volt tolerant pins and a feature that disables everything when either half of the buffer is unpowered.
 
 Two RP2040 pins control each buffer: one sets the direction (input/output), and one does the actual IO (high/low/read). In the past this setup forced us towards a CPLD or FPGA to deal with bidirectional protocols like I2C, but the RP2040 PIO peripheral does a great job of managing the buffer.
 
@@ -107,15 +107,15 @@ At least three manufacturers make a 74LVC1T45 with slightly different specificat
 |Hardware Revision|Buffer Chip|
 |-|-|
 |REV8| Texas Instruments|
-|REV9| WuXi I-Core|
+|REV10| WuXi I-Core|
 
-Revision 9 is fitted with buffers made by WuXi I-Core, a Chinese domestically manufactured part that works down to 1.2 volts.
+Revision 10 is fitted with buffers made by WuXi I-Core, a Chinese domestically manufactured part that works from 5 to 1.2 volts.
 
 ### Toggleable Pull-up Resistors
 
 [![](./img/bp5rev8/pullup.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
 
-Each IO pin has a toggleable [10K pull-up resistor](components/passives#resistor-arrays-5-0402x4-convex). Onboard pull-ups are controlled by two [74HC4066 analog switches](components/chips#74hct4066-analog-switch-tssop-14) (U309/U310), and powered through the VOUT/VREF pin.
+Each IO pin has a toggleable [10K pull-up resistor](components/passives#resistor-arrays-5-0402x4-convex). Onboard pull-ups are controlled by eight [SI2301](components-rev10/transistors-fets#pmos-fet-2a-vgs-1-volts-sot-523) PFETs with a very low (<1volt) threshold voltage. Pull-ups are powered through the VOUT/VREF pin.
 
 ### Main IO Connector
 
@@ -126,7 +126,7 @@ Bus Pirate 5's main IO header uses a 2.54mm 10 pin [TJC8A/HX25418 connector](com
 |Pin|Label|Description|
 |-|-|-|
 |1|VOUT/VREF|Pin supplies 1-5volts up to 400mA with current limit and resetable fuse (VOUT) **OR** connects an external voltage source to the Bus Pirate IO interface (VREF)|
-|2-9|IO0 - IO7|Buffered 1.65-5volt IO pins with voltage measurement and optional 10K pull-up resistors|
+|2-9|IO0 - IO7|Buffered 1.2-5volt IO pins with voltage measurement and optional 10K pull-up resistors|
 |10|GND| Ground pin|
 
 :::info
@@ -152,7 +152,7 @@ The 1mm 9 pin connector mates with 'SH' style cables.
 
 [![](./img/bp5rev8/ppsu.jpg)](./img/bp5rev8/BusPirate-5-rev8.pdf)
 
-The bulldozer IO buffers run from 1.65 to 5volts, they need a power supply to match. The programmable power supply unit is another killer feature of Bus Pirate 5. 
+The bulldozer IO buffers run from 1.2 to 5volts, they need a power supply to match. The programmable power supply unit is another killer feature of Bus Pirate 5. 
 - 1-5volts adjustable output, 400mA max
 - 0-500mA current sense 
 - 0-500mA current limit with digital fuse
@@ -239,18 +239,18 @@ While the adjustable voltage regulator is capable of 0.8 to 5.0volt output, the 
 R408/R409 are two 33K resistors instead of a single resistor. This was done to reduce the number of parts in the BOM and save a pick and place feeder during development.
 :::
 
-## TF flash card Socket
+## 1Gbit NAND Flash
 
 [![](./img/bp5rev8/sdcard.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
 
-A [TF flash card socket](components/connectors#micro-sd-card-socket) is connected to the RP2040 via an SPI bus shared with the LCD and 74HC595 IO expanders. A [22uH inductor](components/passives#inductor-22uh-50ma-0603) (L100) helps prevent brown out resets caused by inrush current when a card is inserted. 
+A [1 Gbit NAND flash chip](components-rev10/chips#nand-flash-1gbit-spi-updfn-8) is connected to the RP2040 via an SPI bus shared with the LCD and 74HC595 IO expanders. 
 
 ![](./img/json-config.png)
 
-TF flash card storage is used to save global and mode configuration preferences in simple JSON files. It can also be used for all kinds of interesting things, like firmware storage for production programming, saving dumps from flash chips and EEPROMs or logging bus communications. It will be interesting to see what the community comes up with.
+NAND flash is used to save global and mode configuration preferences in simple JSON files. It can also be used for all kinds of interesting things, like firmware storage for production programming, saving dumps from flash chips and EEPROMs or logging bus communications. It will be interesting to see what the community comes up with.
 
 :::info
-The TF flash card appears as a readable and writable USB disk drive, however the speed is very low because there aren't enough RP2040 pins to implement a full TF flash card interface.
+NAND flash appears as a readable and writable USB disk drive, however the speed is low because there only enough RP2040 pins to implement a one bit SPI interface.
 :::
 
 ## LCD

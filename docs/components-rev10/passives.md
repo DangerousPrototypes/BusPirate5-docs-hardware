@@ -20,6 +20,7 @@ sidebar_label: 'Passives'
 |R104 R105 R312 R402 R406 R407 R410 R501 R606 R609 R610 R611 R613|0402|10K|13|\>=1/16th Watts|1%|
 |R103 R208 R608 R612 R614 R615|0402|200R|6|\>=1/16th Watts|1%|
 |R404|0402|133K|1|\>=1/16th Watts|1%|
+|??|0402|510R|?|\>=1/16th Watts|1%|
 
 *   Manufacturers: Any. We've been using UniRoyal (UniOhm/RoyalOhm).
 
@@ -36,9 +37,11 @@ Any standard quality 1% resistor can be used.
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
 |RN301 RN305 RN306 RN309 RN313 RN314 RN400 RN401 RN402|0402x4 convex|330R|9|\>=1/16th Watts|5%|
+|??|0402x4 convex|510R|4|\>=1/16th Watts|5%|
 |RN311 RN312|0402x4 convex|10K|2|\>=1/16th Watts|5%|
-|RN303 RN308|0402x4 convex|100K|2|\>=1/16th Watts|5%|
+|RN303 RN308 (NEW??)|0402x4 convex|100K|2|\>=1/16th Watts|5%|
 |RN302 RN304 RN307 RN310|0402x4 convex|1M|4|\>=1/16th Watts|5%|
+
 
 Any standard quality 5% 0402x4 resistor array can be used. Convex type (leads on the tips of each resistor). We've been using UniRoyal (UniOhm/RoyalOhm).
 
@@ -93,21 +96,22 @@ Standard 1N4148 diode, any manufacturer.
 Several manufacturers make a 1N4148 diode and also several of the transistors in this BOM. See the table in the Transistors and FETs section of the sourcing guide.
 :::
 
-## Inductor 22uH 50mA+ 0603
+## Dual Schottky Diode BAS40 SOT-523
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-|L100|0603|22uH|1|>=50mA (>=150mA surge)|
+|???|SOT-523|BAS40-05T|5||common cathode|
 
-This inductor prevents brown out resets due to voltage level drop when an TF flash card is inserted into the socket. It should be 22uH (typically ~+/-25%) capable of 50mA current or greater. If there is a surge current rating it's best to look for >=150mA, but this isn't always specified and TF flash cards generally use well under 40mA. The other values are not critical.
+Dual Schottky diodes with very low reverse leakage (<=6nA @ 5volts T=25c) and low forward voltage (<=0.4volt @ 0.05mA T=25c).
 
-**Any manufacturer is fine** if you can find it, this is an example:
+This diode protects op-amps connected to the IO pins from damage due to reverse current when reverse powered. The forward voltage **must** be less than 0.5volts with some margin to spare. 
 
-* [MLZ1608M220WT000](https://item.szlcsc.com/356700.html) (TDK)
-
-:::warning
-TDK seems to be the only manufacturer of these high current miniature inductors in 0603. There are also wire wound inductors with a cute little "truth window" in the top: these are about half the price. However they are an exposed inductor coil and the RF effects may be an issue, so we chose not to FCC qualify with a cheaper part. We may look into it in the future, if only because it feels dirty to rely on a single supplier component in these times of uncertain supply chains.
+:::tip
+In our experience the generic equivalent parts are very leaky, so we use genuine Diodes INC parts in REV10. We continue to investigate cheaper alternatives for future revisions.
 :::
+
+* [BAS40-05T-7-F](https://item.szlcsc.com/145670.html) (Diodes INC)
+
 
 ## Ferrite Bead 1.5A 0805
 
@@ -121,7 +125,7 @@ This ferrite bead filters RF interference to/from the USB cable. The part must b
 The same bead used on the previous Bus Pirate versions will work.
 :::
 
-**Any manufacturer is fine**, these are only examples:
+Examples:
 
 *   [MMZ1608Y300BTD25](https://item.szlcsc.com/429984.html)
 *   [MMZ1608R150ATD25](https://item.szlcsc.com/429982.html)

@@ -25,6 +25,23 @@ Example:
 *   [GS321](https://item.szlcsc.com/169043.html) (Gainsil)
 *   [LMV321](https://item.szlcsc.com/7814926.html) (HXY MOSFET)
 
+## Quad op-amp rail to rail TSSOP-14
+
+
+
+|**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
+|-|-|-|-|-|-|
+|???|TSSOP-14|LMV324  |2  |5 volts  |R2R, Vos ~0.4V typical, ~3.5V max  |
+
+General purpose quad rail to rail op-amp with >1MHz GBP in TSSOP-14 package. 
+
+LMV324 is a generic part number available from multiple manufacturers, but they are not created equal. From the appearance of the datasheets, there are four common dies used in this component by most manufacturers. The best quality die has 0.4 volt typical offset voltage (3.5 volts max @ 25C).
+
+Example:
+
+*   [LMV324IPWR](https://item.szlcsc.com/381452.html) (TI) 
+*   [LMV324MT](https://item.szlcsc.com/3498017.html) (HGSemi)
+
 ## Op-amp rail to rail SOT-23-5 A grade
 
 ![c](./img/mcp6001-400.png "c")

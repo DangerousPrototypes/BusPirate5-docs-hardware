@@ -38,10 +38,9 @@ REV 10 has the following changes from REV 8:
 | UNI-ROYAL(厚声) | 4D02WGJ0331TCE | 0402x4| 330R ±5% | 10000 |SZRCD|
 | UNI-ROYAL(厚声) | 0805W8J0330T5E | 0805| 33R ±5%| 5000|SZRCD|
 | Ta-i Technology (大毅科技)| RLP25FEER200 | 2515| 0R2 ±1% 2W | 4000|SZRCD|
-| TDK | MLZ1608M220WT000 | 0603| 22uH 155mA (surge) | 4000|SZLCSC|
 | FH(风华)  | CBW201209U300T | 0805| 1.5A Ferrite Bead| 4000|SZLCSC|Part, Manuf|
 | CBI (创基)| 1N4148WS T4| SOD-523 | 100V 150mA | 3000|CBI (创基)|Package|
-| DIODES(美台)| BAT40-05T-7-F|SOT-523|Schottky Diode x 2| 3000|SZLCSC|New|
+| DIODES(美台)| BAS40-05T-7-F|SOT-523|Schottky Diode x 2| 3000|SZLCSC|New|
 | CBI (创基)| 2N7002| SOT-23|NFET| 3000|CBI (创基)|
 | CBI (创基)| BC2301(2A) | SOT-523|PFET| 3000|CBI (创基)|Part, Package, Manuf|
 | CBI (创基)| MMDT3906| SOT-363/SC-70-6 |Dual PNP| 3000|CBI (创基)|
