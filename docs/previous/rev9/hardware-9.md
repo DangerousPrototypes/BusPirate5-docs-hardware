@@ -1,7 +1,6 @@
 ---
 sidebar_position: 2
 sidebar_label: 'Hardware'
-slug: /
 ---
 
 # Bus Pirate 5 REV 8 Hardware
@@ -35,7 +34,7 @@ Bus Pirate 5 is an open-source hardware debugging tool designed to eliminate the
 |**Current sense**|0-500mA|-|
 |**Programmable fuse**|0-500mA|-|
 |**Display**| 320x240 IPS all-angle|-|
-|**TF flash card storage**| up to 64GB| -|
+|**TF flash storage**| up to 64GB| -|
 
 <div class="img-center">
 
