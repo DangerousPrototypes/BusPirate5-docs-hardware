@@ -7,7 +7,9 @@ sidebar_label: 'Introduction'
 
 ![](./img/bp-rgb-dark.jpg)
 
-Bus Pirate 5 is the latest edition of the original universal serial interface trusted by hackers since 2008. Talking to chips and probing interfaces is more fun than ever!
+Bus Pirate 5 is the latest edition of the original universal serial interface trusted by hackers since 2008. 
+
+Can't get a chip to work? Is it the circuit, code, bad part or a burned out pin? The Bus Pirate sends commands over common serial protocols so you can get to know a chip before prototyping. Updated with tons of new features and tools, talking to chips and probing interfaces is more fun than ever!
 
 ## RP2040
 - Based on Raspberry Pi Foundation RP2040
@@ -28,7 +30,7 @@ Bus Pirate 5 is the latest edition of the original universal serial interface tr
 - Resettable digital fuse
 - Protection circuit
 
-## TF flash card
+## 1Gbit NAND flash storage
 - Save global and mode settings
 - Appears as a USB disk drive
 - Future use for logs, dumps and stand-alone programming
@@ -61,7 +63,7 @@ Bus Pirate 5 is the latest edition of the original universal serial interface tr
 ## Resources
 Bus Pirate 5 documentation is broken into [hardware](https://hardware.buspirate.com/introduction) and [firmware](https://firmware.buspirate.com/introduction) sections so it can be versioned easily with each update. Here's some other fun stuff you might enjoy.
 - [Component selection and sourcing](components/introduction)
-- [Case/enclosure](enclosure/fdm-shell)
+- [Case/enclosure](enclosure/injection-molded-shell)
 - [Cables](https://firmware.buspirate.com/overview/cables)
 - [Milled breadboard pins](https://firmware.buspirate.com/overview/milled-breadboard-pins)
 - [Hardware users guide](https://firmware.buspirate.com/overview/hardware)
@@ -89,8 +91,9 @@ Bus Pirate 5 documentation is broken into [hardware](https://hardware.buspirate.
 - [Twitter](https://twitter.com/dangerousproto)
 
 
-
 ## FCC compliance statement
 This device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) this device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.
 
+## CE compliance
+The Bus Pirate has been lab tested to comply with European CE requirements.
 

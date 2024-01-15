@@ -39,7 +39,7 @@ Bus Pirate 5 is an open-source hardware debugging tool designed to eliminate the
 
 <div class="img-center">
 
-![](./img/bp5rev8/pcb-bottom.jpg)
+![](./img/bp5rev10/pcb-bottom.jpg)
 
 </div>
 
@@ -287,7 +287,7 @@ If you go hardware hacking, be aware that it is possible to far exceed the limit
 
 <div class="img-center">
 
-![](./img/bp5rev8/pcb-top.jpg)
+![](./img/bp5rev10/pcb-top.jpg)
 
 </div>
 

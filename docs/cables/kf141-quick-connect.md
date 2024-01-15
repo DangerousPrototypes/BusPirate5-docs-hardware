@@ -3,31 +3,33 @@ sidebar_position: 20
 sidebar_label: 'Quick Connectors'
 ---
 
-# KF141 Quick Connector Adapter
+# KF141 Quick Connect Adapter
 
-![](./img/pin-milled-v1.jpg)
+![](./img/kf141r-render.png)![](./img/kf141r-pcb-2.jpg)  
 
-Quick connect. What is it. Silk screened pin names.
+Sometimes you just need to connect some wires and dig into a project. Quick connector boards get you working right away.
 
-Various quality in the market. We bought a bunch and chose the highest quality with aren't cheap.
+KF141 is a popular quick connector block with sturdy spring retention clamps. Press the lever, insert a stripped wire, then release the lever to clamp it firmly in place. Pin names are silkscreened in bright orange so you get the right connection the first time.
 
-## Right Angle (KF141-R)
+## KF141-R right angle connector
 
-!Item
+![](./img/kf141r.jpg)
 
-link to PCBs and schematic
+KF141-R is a right angle connector. Wires clamps are oriented to the front of the connector block. Pin names are silkscreened in bright orange to save time and hassle.
 
-Slightly smaller footprint
+- [Schematic and PCB](https://github.com/DangerousPrototypes/BusPirate5-hardware/tree/main/kf141r-adapter)
+- [Development in the forum](https://forum.buspirate.com/t/kf141-quick-connector-adapter/90?u=ian)
+- Buy
 
-- Where to buy
+## KF141-V vertical connector
 
-## Vertical (KF141-V)
+![](./img/kf141v.jpg)
 
-!Item
+KF141-V is a vertical connector. Wires clamps are oriented to the top of the connector block. Pin names are silkscreened in bright orange to save time and hassle.
 
-link to PCBs and schematic
+- [Schematic and PCB](https://github.com/DangerousPrototypes/BusPirate5-hardware/tree/main/kf141v-adapter)
+- [Development in the forum](https://forum.buspirate.com/t/kf141-quick-connector-adapter/90?u=ian)
+- Buy
 
-Slightly bigger footprint.
 
-- Where to buy
 
