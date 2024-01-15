@@ -15,7 +15,7 @@ sidebar_label: 'Switches'
 |-|-|-|-|-|-|
 |SW101|4.2x3.2 (PTS810)|Switch SPST|1||  
 
-This is the same switch used on the Raspberry Pi Pico board. Any similar switch is fine.
+This is the same switch used on the Raspberry Pi Pico board to enter bootloader mode. Any similar switch is fine.
 
 Example:
 
@@ -24,7 +24,6 @@ Example:
 *   [GT-TC048A-H025-L1](https://item.szlcsc.com/826767.html) (G-Switch) 
 *   [YTSA016A0252501B](https://item.szlcsc.com/1054564.html) (DGBZ) 
     
-
 ## SPST 3.3x3.3mm, 1.5mmH
 
 ![](./img/switch4p.jpg)![](img/spst-3.3mmx1.5mm-pcb.png)

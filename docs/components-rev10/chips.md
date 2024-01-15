@@ -23,19 +23,18 @@ Raspberry Pi RP2040 microcontroller in QFN-56 package.
 
 128Mbit SPI flash in SOIC8-208mil package, QSPI support required.
 
-*   [W25Q128JVSIQ](https://item.szlcsc.com/98729.html)
+*   [W25Q128JVSIQ](https://item.szlcsc.com/98729.html) (Winbond)
 *   [XM25QH128A](https://item.szlcsc.com/308377.html)
 
 ## NAND Flash 1Gbit SPI UPDFN-8
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-| | UPDFN-8 | 1Gbit SPI NAND flash (MT29F1G01ABAFDWB-IT:F)  |1  ||
+|U105 | UPDFN-8 | 1Gbit SPI NAND flash (MT29F1G01ABAFDWB-IT:F)  |1  ||
 
-1Gbit SPI NAND flash with EEC in UPDFN-8 package. Larger sizes (up to 8Gbit) are available, but are not currently supported.
+1Gbit SPI NAND flash with EEC in UPDFN-8 package. Larger sizes (up to 8Gbit) are available, but are not currently supported by the firmware.
 
-* [MT29F1G01ABAFDWB-IT:F](https://item.szlcsc.com/3176239.html)
-
+* [MT29F1G01ABAFDWB-IT:F](https://item.szlcsc.com/3176239.html) (Micron)
 
 ## 74LVC1T45 bi-directional buffer SC70-6/SOT363
 
@@ -43,13 +42,14 @@ Raspberry Pi RP2040 microcontroller in QFN-56 package.
 |-|-|-|-|-|-|
 |U301 U302 U303 U304 U305 U306 U307 U308|SC70-6/SOT363|74LVC1T45  |8  ||
 
-74LVC1T45 is available from TI, Nexperia and Diodes INC. The TI version (SN74LVC1T45DCK) seems to be the most common in the Chinese market.
+74LVC1T45 is available from TI, Nexperia, Diodes INC and a few Chinese domestic producers. We are currently using logic chips from WuXi I-Core due to price, availability and the lowest operating voltage (>1.2volts) available.
 
-We are currently using logic chips from WuXi I-Core due to price and availability.
+- REV10+ changed TI SN74LVC1T45 to WuXi I-Core AIP74LVC1T45
 
 *   [74LVC1T45DW-7](https://item.szlcsc.com/180239.html) (Diodes INC)
 *   [74LVC1T45GW,125](https://item.szlcsc.com/485235.html) (Nexperia)
 *   [SN74LVC1T45DCK](https://item.szlcsc.com/9911.html) (TI) 
+*   [AIP74LVC1T45GC363](https://item.szlcsc.com/5810901.html) (WuXi I-Core) 
 
 ## CD4067 analog mux TSSOP-24
 
@@ -57,9 +57,11 @@ We are currently using logic chips from WuXi I-Core due to price and availabilit
 |-|-|-|-|-|-|
 |U402|TSSOP-24|CD4067 |1  ||tPHL ~30ns (60ns max) @ 5V |
 
-Multiple manufacturers make an updated CD4067 that is much faster than old CD logic, and even faster than 74HC/74HCT. The high to low (and low to high) propagation delay should be in the neighborhood of 30ns (60ns max) at 5 volts.
+Multiple manufacturers make an updated CD4067 that is much faster than old CD logic, and even faster than older 74HC/74HCT. The high to low (and low to high) propagation delay should be in the neighborhood of 30ns (60ns max) at 5 volts.
 
-We are currently using logic chips from WuXi I-Core due to price and availability.
+- REV10+ changed Nexperia 74HC4067 to WuXi I-Core CD4067
+
+We are currently using logic chips from WuXi I-Core due to price and availability. A part with an identical die is also available from HGSemi.
 
 :::tip
 74HC4067 or 74HCT4067 can be used, but CD4067 is much cheaper and more available. Just be sure that the CD4067 is an updated version, not an original 1970-1990 vintage part.
@@ -77,6 +79,8 @@ Example:
 |U501, U502|TSSOP-16|74HC595  |2  ||
 
 **Must** be the "**HC**" version. The "HCT" version will **NOT** work. Any manufacturer.
+
+- REV10+ changed Nexperia 74HC595 to WuXi I-Core 74HC595
 
 We are currently using logic chips from WuXi I-Core due to price and availability.
 
@@ -96,6 +100,8 @@ Example:
 |U503|TSSOP-20|74HCT245  |1  ||
 
 **Must** be the "**HCT**" version. The "HC" version will **NOT** work. Any manufacturer.
+
+- REV10+ changed Nexperia 74HCT245 to WuXi I-Core 74HCT245
 
 We are currently using logic chips from WuXi I-Core due to price and availability.
 

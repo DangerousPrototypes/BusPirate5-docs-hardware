@@ -7,20 +7,6 @@ sidebar_label: 'Connectors'
 
 ![](./img/connectors.jpg)
 
-## TF flash card Socket
-
-![sd](./img/sdcard.jpg "sd")
-
-|**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
-|-|-|-|-|-|-|
-|J101|TF-01A|TF flash card connector|1||
-
-Any manufacturer TF flash card socket in the most common package.
-
-Example:
-
-*   [TF-01A](https://item.szlcsc.com/92334.html)
-
 ## USB type C connector 16 pin
 
 ![usbc](./img/usbc.jpg "usb c")
@@ -55,13 +41,17 @@ Example:
 
 ## 10P male 2.54mm right angle (90 degrees) shrouded connector
 
-![](./img/con10p.jpg)  
+![](./img/con10p.jpg)![10 pin right able connector. Black shroud with IO pin names printed in white silkscreen.](./img/p10-silkscreen.jpg)  
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-|J301|10P|TJC8A-10, HX25418-10WA, etc|1||Any compatible part is fine|
+|J301|10P|TJC8A-10, HX25418-10WA, etc|1||IO pin silkscreen applied from REV10+|
 
 This is a common locking shrouded 2.54mm pin header. Various part numbers in the market include TJC8A-10, HX25418-10WA, etc
+
+:::info
+Starting from REV10 IO pin names are silkscreened on the main 10P connector. The supplier is a small company that specializes in silkscreening odd shaped electronics such as wireless bluetooth in-ear headphones.
+::: 
 
 Examples:
 

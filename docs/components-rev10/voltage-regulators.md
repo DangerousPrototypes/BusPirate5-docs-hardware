@@ -36,18 +36,20 @@ Example:
 *   [AP2127K-ADJTRG1](https://item.szlcsc.com/97547.html "AP2127K-ADJTRG1 ") (Diodes INC)
 *   [MCP1824T-ADJE/OT](https://item.szlcsc.com/157049.html "MCP1824T-ADJE/OT ") (Microchip)
 
-
 MCP1824 was used for development, but it is more expensive and harder to source than the AP2127.
 
-:::warning
-MCP1824 and AP2127 are equivalent, but each has a different reference voltage. R403/R404/R405 need to match the regulator as follows:
+:::tip
+If no part can be sourced, a common 1.25V-5V adjustable regulator can be used with the correct resistor values (see calculations spreadsheet). The Bus Pirate will lose features though. The output range will be limited to 1.25volts to 5volts, instead of 0.8volts to 5volts.
 :::
+
+### Reference voltage configuration
+
 |**Part**  |**Ideal Value**|||**Closest Value**|
 |-|-|-|-|-|-|-|
 ||R403|R404|R405|R403|R404|R405|
 |**MCP1824**|77.96K|99.22K|10K|78K|100K|10K|
 |**AP2127**|103.13K|131.25K|33K|102K|133K|33K|
 
-:::tip
-If no part can be sourced, a common 1.25V-5V adjustable regulator can be used with the correct resistor values (see calculations spreadsheet). The Bus Pirate will lose features though. The output range will be limited to 1.25volts to 5volts, instead of 0.8volts to 5volts.
+:::caution
+MCP1824 and AP2127 are equivalent, but have different reference voltages. R403/R404/R405 need to match the regulator as shown in the table.
 :::

@@ -12,6 +12,7 @@ REV 10 is the first production version (from January 2024) that ships in an encl
 ## Change Log
 REV 10 started as a [BOM cleanup](https://forum.buspirate.com/t/analog-parts-notes-for-rev9/24), but also addresses [two issues in REV 8](https://forum.buspirate.com/t/rev10-nand-flash-and-analog-mux-update/105).
 - Changed low voltage op-amp (Microchip MCP6001/Gainsil GS6001) to jellybean part LMV321
+- Changed current sense op-amp to 'A' graded jellybean part LMV321A for better accuracy
 - Changed low voltage comparator (RUNIC RS8901XF) to jellybean part LMV331
 - Changed PFETs (Winsok WST3423) to jellybean part SI2301, changed package to SOT-523
 - Changed 1N4148 package to SOD-523

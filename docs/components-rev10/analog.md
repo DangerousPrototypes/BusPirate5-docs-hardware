@@ -9,15 +9,19 @@ sidebar_label: 'Analog'
 
 ## Op-amp rail to rail SOT-23-5
 
-![c](./img/mcp6001-400.png "c")
+![c](./img/lmv321.png "c")
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-|U404, U603|SOT-23-5|LMV321  |2  |5 volts  |R2R, Vos ~0.4V typical, ~3.5V max  |
+|U404 U506 U603|SOT-23-5|LMV321  |3  |5 volts  |R2R, Vos ~0.4mV typical, ~3.5mV max  |
 
 General purpose rail to rail op-amp with >1MHz GBP in SOT-23-5 package. 
 
-LMV321 is a generic part number available from multiple manufacturers, but they are not created equal. From the appearance of the datasheets, there are four common dies used in this component by most manufacturers. The best quality die has 0.4 volt typical offset voltage (3.5 volts max @ 25C).
+- REV10+ changed low voltage op-amp (Microchip MCP6001/Gainsil GS6001) to jellybean part LMV321
+
+:::caution
+LMV321 is a generic part number available from multiple manufacturers, but they are not created equal. From the appearance of the datasheets, there are four common dies used in this component by most manufacturers. The best quality die has 0.4mV typical offset voltage (3.5mV volts max @ 25C).
+:::
 
 Example:
 
@@ -27,15 +31,17 @@ Example:
 
 ## Quad op-amp rail to rail TSSOP-14
 
-
-
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-|???|TSSOP-14|LMV324  |2  |5 volts  |R2R, Vos ~0.4V typical, ~3.5V max  |
+|U504 U505|TSSOP-14|LMV324 |2  |5 volts  |R2R, Vos ~0.4V typical, ~3.5V max  |
 
 General purpose quad rail to rail op-amp with >1MHz GBP in TSSOP-14 package. 
 
-LMV324 is a generic part number available from multiple manufacturers, but they are not created equal. From the appearance of the datasheets, there are four common dies used in this component by most manufacturers. The best quality die has 0.4 volt typical offset voltage (3.5 volts max @ 25C).
+- REV10+ added LMV324 to buffer analog mux inputs and prevent glitches on the IO pins
+
+:::caution
+LMV324 is a generic part number available from multiple manufacturers, but they are not created equal. From the appearance of the datasheets, there are four common dies used in this component by most manufacturers. The best quality die has 0.4mV typical offset voltage (3.5mV max @ 25C).
+:::
 
 Example:
 
@@ -44,15 +50,17 @@ Example:
 
 ## Op-amp rail to rail SOT-23-5 A grade
 
-![c](./img/mcp6001-400.png "c")
+![c](./img/lmv321.png "c")
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-|U602|SOT-23-5|LMV321A  |1  |5 volts  |R2R, Vos ~0.1V typical, ~0.4V max  |
+|U601|SOT-23-5|LMV321A  |1  |5 volts  |R2R, Vos ~0.1mV typical, ~0.4mV max  |
 
 General purpose rail to rail op-amp with >1MHz GBP in SOT-23-5 package. This op-amp is used in the current sense circuit and is more sensitive to input offset, so a better quality part can be used.
 
-LMV321A is graded version of LMV321 available from several manufacturers. Aim for 0.1 volt typical offset voltage (0.4 volts max @ 25C).
+LMV321A is graded version of LMV321 available from several manufacturers. Aim for 0.1 volt typical offset voltage (0.4mV max @ 25C).
+
+- REV10+ changed to 'A' graded LMV321
 
 :::tip
 The same general purpose part used for U404 and U603 can also be used. It's not necessary to have a higher quality graded component, however the current sense will not be as accurate.
@@ -66,13 +74,15 @@ Example:
 
 ## Comparator SOT-23-5
 
-![6](./img/mcp6541-400.png "6")
+![6](./img/lmv331.png "6")
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
 |U602  |SOT-23-5|LMV331|1  |5 volts  | 
 
 General purpose comparator in SOT-23-5 package. LMV331 is a generic part number used by a multitude of small manufacturers.
+
+- REV10+ changed low voltage comparator (RUNIC RS8901XF) to jellybean part LMV331
 
 Example:
 
