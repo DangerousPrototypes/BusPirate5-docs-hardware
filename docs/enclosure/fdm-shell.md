@@ -27,3 +27,11 @@ For large volumes it will be better to injection mold the case. The open source 
 |Nuts  |M3x3mmLx4.5mmD|M3 brass heat set nut  |4  | |
 
 - Opposite direction knurling 
+
+## M3 8mm DIN7991 bolt
+  
+![](./img/din7991.png)
+
+|**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
+|-|-|-|-|-|-|
+|Bolts|M3x8mm DIN7991|M3 8mm bolt DIN7991 silver|4||Silver color|

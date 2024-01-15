@@ -5,13 +5,24 @@ sidebar_label: 'Bill  of Materials'
 
 # Bill of Materials REV 10
 
-REV 10 is the main production version (from December 2023). Check your Bus Pirate 5 PCB to find your revision number located near the production date (bottom) and the 10 pin connector (top). 
+REV 10 is the main production version (from January 2024). Check your Bus Pirate 5 PCB to find your revision number located near the production date (bottom) and the 10 pin connector (top). 
 
-REV 10 has the following changes from REV 8:
-- Tweaks to the supplier list using cheaper and better available parts
-- Replace removable flash with onboard 1Gbit NAND flash to improve speed
-- Op-amp buffer in front of analog mux to eliminate glitches on IO pins
-- Updated protection resistor values to match current limits of some replacement parts
+REV 10 started as a BOM has the following changes from REV 8:
+- Changed low voltage op-amp (Microchip MCP6001/Gainsil GS6001) to jellybean part LMV321
+- Changed low voltage comparator (RUNIC RS8901XF) to jellybean part LMV331
+- Changed PFETs (Winsok WST3423) to jellybean part SI2301, changed package to SOT-523
+- Changed 1N4148 package to SOD-523
+- Replaced 74HC4066 with 8 x SI2301 PFETs to save board space and ease sourcing
+- Changed 74HC4067 to "improved" jellybean CD4067 for cost savings and availability
+- Changed CD4067 series protection resistors (510R) to match current limits of pin diodes
+- Changed all 74-series logic chips (Nexperia/TI) to cheaper/improved WuXi I-Core brand
+- Replaced removable flash socket with onboard 1Gbit NAND flash (MT29F1G01ABAFDWB-IT:F) to improve internal SPI bus speed
+- Added 1 RGB side LED and 1 RGB mini-e LED were flash socket was previously mounted
+- Added 2 x LMV324 quad op-amp buffer and BAS40-05T-7-F Schottky protection diodes in front of analog mux to eliminate glitches on IO pins 
+- Added pinout silkscreen to 10P connector
+- Swapped power supply PWM pins (GPIO22, GPIO23) and LCD control pins (GPIO24, GPIO25) to free up hardware PWM channels
+- Compacted the last four bits of the analog mux to improve sweep speed
+
 
 | Brand | Part | Package | Description| Reel Quantity | Supplier |Changes|
 |-|-|-|-|-|-|-|
@@ -50,11 +61,11 @@ REV 10 has the following changes from REV 8:
 | DIODES(美台)| AP2127K-ADJTRG1| SOT-23-5|0.8V-5.5V 400mA VREG| 3000|Navia|
 | Gainsil(聚洵) | LMV321 | SOT-23-5|R2R op-amp| 3000|SZLCSC|Part, Footprint, Manuf|
 | Gainsil(聚洵) | LMV321A (GS321A) | SOT-23-5|R2R op-amp A grade| 3000|SZLCSC|Part, Footprint, Manuf|
-| HGSemi | LMV324 | TSSOP-16 |R2R op-amp x 4| 3000|SZLCSC|New|
+| HGSemi | LMV324 | TSSOP-14 |R2R op-amp x 4| 3000|SZLCSC|New|
 | HGSemi | LMV331 (HGV331) | SOT-23-5|Comparator| 3000|SZLCSC|Part, Footprint, Manuf|
 | Raspberry Pi| RP2040| QFN-56|Microcontroller|500|SZLCSC|
 | Winbond | W25Q128JVSIQ| SOP-8 |128Mbit Flash|2000|SZLCSC|
-| Micron | MT29F1G01ABAFDWB-IT:F|UPDFN-8|4000|SZLCSC?|New|
+| Micron | MT29F1G01ABAFDWB-IT:F|UPDFN-8|1Gbit NAND flash|4000|SZLCSC|New|
 | I-CORE(中微爱芯) | AIP74HC595TA | TSSOP-16|Shift register| 2500|DXZH|Manuf|
 | I-CORE(中微爱芯) | AIP74HCT245TA| TSSOP-20|Level shifter|2500|DXZH|Manuf|
 | I-CORE(中微爱芯) | CD4067| TSSOP-24|16 channel analog mux| 2500|DXZH|Manuf, Part|
@@ -65,7 +76,6 @@ REV 10 has the following changes from REV 8:
 | KAIDI |TJC8-10AW| | 1x10 P2.54mm horizontal male|1000|KAIDI|
 | SZWG |1x03 P2.54mm vertical female| | 1x03 P2.54mm vertical female| |SZWG|
 | SZYC | 1.0-9P WT|Tube|1x09 P1.00mm horizontal male| |SZYC|
-| YUANDI(元迪) |TF-01A| |TF flash card socket|1000|YUANDI(元迪)|
 | SHOU HAN(首韩) | TYPE-C-31-M-12| |USB C 16P|1000|SHOU HAN(首韩)|
 | SHOU HAN(首韩) | TS3425BA 098 2.5H 250gf|4.2x3.4x2.5mm|4x3x2.5H button 250gf|3000|SHOU HAN(首韩)|
 | SHOU HAN(首韩) | TS3315A 250gf 025 |3.3x3.3x1.5mm|3x3x2.5H button 250gf|4000|SHOU HAN(首韩)|

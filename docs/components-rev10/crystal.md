@@ -17,6 +17,10 @@ sidebar_label: 'Crystal'
 
 Any manufacturer crystal in 4 pin 3225 package. 18pF or 20pF, less than +/-30ppm frequency tolerance (we use +/-10ppm).
 
+:::tip
+We prototyped with a smaller package crystal, but the SMD3225
+:::
+
 Example:
 
 *   [X322512MSB4SI](https://item.szlcsc.com/9522.html)

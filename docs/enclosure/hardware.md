@@ -5,13 +5,7 @@ sidebar_label: 'Hardware'
 
 # Hardware
 
-## M3 8mm DIN7991 bolt
-  
-![](./img/din7991.png)
-
-|**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
-|-|-|-|-|-|-|
-|Bolts|M3x8mm DIN7991|M3 8mm bolt DIN7991 silver|4||Silver color|
+Common hardware for all case versions.
 
 ## SC121 button cap
 
@@ -19,22 +13,26 @@ sidebar_label: 'Hardware'
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-|Button cap|5x5mm|Button cap, 5mm, silver|1||Silver color|
+|Button cap|5x5mm|Button cap, 5mm, metalized|1||Metalized silver|
+|Button cap|5x5mm|Button cap, 5mm, dyed|3||"Arcade" red, yellow, blue*|
+|Button cap|5x5mm|Button cap, 5mm, hydrographic foil dip|1||Carbon fiber*|
+|Button cap|5x5mm|Button cap, 5mm, black|1||Black*|
 
-Example:
+A metalized silver button cap is installed by default. The manufacturer also sells a black version.
 
-*   [SC121](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.1a572e8dgWarTd&id=623994223809&_u=j26q2r6fc6ac)
+[pics]
 
-## 2mm HEX key
+After dying the AUX cable crimp housings 
 
+[pic of carbon fiber] [pic of dip process]
+
+
+
+## 2mm HEX wrench
 ![](./img/hexkey.jpg)  
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
 |Hex key|2mm  |2mm hex key|1||DIN7991  |
 
-This tool is required to open the Bus Pirate case. One key should be included with each Bus Pirate.
-
-Example:
-
-*   [2mm hex key](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.1a572e8daQXham&id=35134933164&_u=j26q2r6f045a)
+A 2mm HEX wrench to open the Bus Pirate case. One key should be included with each Bus Pirate.
