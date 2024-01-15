@@ -7,6 +7,6 @@ sidebar_label: 'Introduction'
 
 ![](./img/bp-rgb-dark.jpg)
 
-![](./img/bp5-pcb-bottom.jpg)
+![](./img/bp5rev10-bottom.jpg)
 
-![](./img/bp5-pcb-top.jpg)
+![](./img/bp5rev10-top.jpg)

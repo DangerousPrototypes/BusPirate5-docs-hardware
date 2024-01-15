@@ -1,31 +1,39 @@
 ---
 sidebar_position: 10
-sidebar_label: 'Molded Shell'
+sidebar_label: 'Injection Molded'
 ---
 
 # Injection Molded Enclosure
 
+![](./img/enclosure-top.jpg)
+
 ## Components
 ### PP Shell
+
+![](./img/case-pp-final.jpg)
 
 |**Reference**  |**Value  **|**Quantity  **|**Rating**  |**Note  **|
 |-|-|-|-|-|
 |Top shell  ||1  ||Clear PP|
 |Bottom shell||1||Clear PP|
 
-Top and bottom enclosure injection molded in clear/transparent PP plastic. 
+Top and bottom enclosure injection molded in clear-ish polypropylene (PP) plastic with a bit of titanium dioxide for color. 
 
 ### M3 brass insert nuts
+
+![](./img/injection-insert-nuts.jpg)
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
 |Nuts  |M3x3mmLx4.0mmD|M3 brass insert nut  |4  ||Should be 4mm height|
 
-Brass insert nuts for injection molding. 
+Brass insert nuts for injection molding. Nuts are placed into the tooling before each case is injection molded. This is labor intensive, leads to scheduling problems and the results vary.
 
-Nuts are placed into the tooling before each case is injection molded. This is labor intensive and future cases will probably have a cavity on the bottom for a typical M3 nut.
+Ideally, the nut height would be 4mm so the case works with standard 8mm bolts. Due to circumstances (see below) the factory used 3mm insert nuts. 8mm bolts hit the injection molding gunk that creeps into the base of the 3mm nut. Bolts don't always sit flush with the front of the case. The current solution is a 7mm bolt, which is a non-standard size.
 
-Ideally, the nut height would be 4mm so the case works with standard 8mm bolts. Due to circumstances (see below) the factory used 3mm insert nuts. 8mm bolts hit the injection molding gunk that creeps into the base of the 3mm nut, so the bolts don't always sit flush with the front of the case. The current solution is a 7mm bolt, which is a non-standard size.
+![](./img/case-rev10.png)
+
+Future cases will probably have a cavity on the bottom for a typical M3 nut so the molding can be fully automated.
 
 ### M3 7mm DIN7991 bolt
   
@@ -35,87 +43,103 @@ Ideally, the nut height would be 4mm so the case works with standard 8mm bolts. 
 |-|-|-|-|-|-|
 |Bolts|M3x**7mm** DIN7991|M3 **7mm** bolt DIN7991 silver|4||Silver color|
 
-**7mm** bolts are a non-standard size. We're stuck with them because of clearance issues in this revision of the injection molded case. Bolts can usually be found at a couple factories that have remains from previous custom manufacturing runs. The next enclosure revision will address this issue.
+**7mm** bolts are a non-standard size. We're stuck with them because of clearance issues in this batch of cases. The next enclosure revision will address this issue.
 
 :::danger
 Bolts should be finger tight. Over tightening bolts may pull the insert nut out of the case, or crush the LCD.
 :::
 
 :::info
-The 3D printable version of the enclosure work with standard 8mm DIN7991 bolts, but injection molded version specifies 7mm bolts. 8mm bolts will work, but some heads may sit 0.1-0.3mm from the front of the case. 
+The 3D printable versions of the enclosure work with standard 8mm DIN7991 bolts, only the injection molded version specifies 7mm bolts. 8mm bolts will work, but some heads may sit fully flush with the front of the case. 
 :::
 
-### Hole cover
+### The Plug
+
+![](./img/theplug.png)
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-|Cover|-|Hole cover|1||White SLA|
+|The Plug|-|Hole cover|1||White SLA|
 
-Bus Pirate 5 REV0 to REV9 included an SD card socket. SD cards are slow in SPI mode, and slow down everything else on the internal shared SPI bus (LCD, IO expanders). We replaced it with a chunk of onboard NAND flash, but now there's a gaping hole in the enclosure and it's far too late to make changes.
+Bus Pirate 5 REV0 to REV9 included an SD card socket. SD cards are slow in SPI mode, and slow down everything else on the shared SPI bus (LCD, IO expanders). We replaced it with a chunk of onboard NAND flash, but now there's a gaping hole in the enclosure and it's far too late to make changes.
 
-In an act of despiration we modeled (link) a hole cover and SLA printed it. Despite being smaller than the allowed specs, our SLA supplier was happy to print batches of them. It turned out very well - super thin and a good color match to the case material. 
+![](./img/case-plug2.jpg) 
+
+In an act of desperation we [modeled a hole cover](https://github.com/DangerousPrototypes/BusPirate5-hardware/tree/main/enclosure) and SLA printed it. Despite being smaller than the allowed specs, our SLA supplier was happy to print batches of them. It turned out very well - super thin and a good color match to the case material. 
 
 The SD card slot will be removed in a future revision of the case.
 
 ## Manufacturing Notes
 
-We chose the case factory because they were cheap and the boss took the time to review the Bus Pirate and send photos of plastic materials/styles he thought would work well. It was off to such a great start.
-
-We went the cheap route and paid dearly. This is our experience, and really shouldn't be your experience.
+We received quotes from six injection molding factories. One boss took the time to review the Bus Pirate and send photos of plastic materials/styles he thought would work well, he also offered a great price. It was off to such a great start.
 
 ### Tooling fit test
-ABS plastic test of inside fit. No surface treatment - check the tooling marks on the plastic.
 
-No insert nuts, which we reported and tehy said no problem.
+![](./img/case-tooltest.jpg)
+
+First we received a tooling fit test. This is a molding from the raw tooling to see if the insides are in the right place. There's no surface treatment yet, you can see the tooling paths on the outside of the case. 
+
+The fit was ok, but there were no insert nuts so we couldn't fully test it. The factory said they'd be in place for the material test. 
 
 :::danger
-Mold tooling is made to accommodate the properties of specific materials. One tooling should not be used for multiple materials like ABS, PP, PC etc. That didn't seem to matter to the factory we used, they did make it work. Did it work well though? It wasn't great...
+We later learned that this sample was made with ABS plastic, instead of PP. Mold tooling is made to accommodate the properties of specific materials. One tooling usually isn't used for multiple materials like ABS, PP, PC etc. That didn't seem to matter to the factory, they did make it work. 
 :::
 
-### Material test
-Matte surface treatment applied. Molded in PP. A little too clear (lights not diffused).
+### Polypropylene material test
 
-Still no insert nuts. We panick and ask when we can test them. Soon, no worries.
+![](./img/case-pp1.jpg)
 
-### Polycarbinate for some reason
+Now the outside has a matte surface treatment and it looks a lot more like a real case. It's a tad too clear so the LEDs don't diffuse as much as we'd like. Still no insert nuts to test.
 
-A second material test arrives in PC (polycarbonate), a much stronger material. It's a little more opaque and the LEDs look great. It's much more expensive though, and not the material we origionally ordered for the tooling.
+### Polycarbonate for some reason
+
+![](./img/case-pc.jpg)
+
+The factory goes dark for a bit, then a new set of cases arrives unexpectedly. This time polycarbonate (PC), a much stronger material. It's a little more opaque and the LEDs look great, but it's some kind of up-sale. They want to charge double. We decline and wait for the PP color test.
 
 Still no insert nuts. Next time for sure!
 
 ### Color & production test
 
-Injection molding machine photo
+[photo not found]
 
-A color test was scheduled for a Thursday. 
+A color and small production test was scheduled for a Thursday. We asked that they add a little bit extra titanium dioxide (6g total) to make the PP more opaque. For reasons still unknown, this set off a series of events. 
 
-We asked that they add a little bit extra titanium dioxide (6g total) to make the PP more opaque. This set off a series of events that resulted in our full production batch being scheduled imediatly for the next sunday without a final color or insert nut test. It's months late, okay, we'll roll with it.
+Our full production batch was scheduled immediately the next day (a Sunday) without a final color or insert nut test. It's months late, okay, we roll with it.
 
 ### The bad batch
 
-Pics of bad cases, 
+![](./img/case-pp2-reject.jpg)
 
-Thousands of bits of plastic descend on our office. All of them have serious defects:
+Thousands of bits of plastic descend on our office. The color is right and the outside is pretty nice, but 100% have reject worthy defects.
+
+![](./img/broken-wall.jpg)
+
 - Part of the wall is missing on every case
-- The two positioning pegs for the 9P auxillary conector are missing/deformed on every case
-- Insert nuts are in the wrong place or burried on a third of the cases
-- Enough plastic leaked into the base of the insert nut that 8mm bolts no longer consistently sit flush agains the front of the case
 
-After months of delay this was a huge bummer. The factory asked us to "help them out" and use the cases anyways. Next, they wanted to charge us even more for a second batch using PC.
+![](./img/missing-legs-2.jpg)  
 
-We talked to a contact at a factory that is far too high-end/high-volume for our project. He looked as some photos and gave us the techinal terms (in Mandarin) for the mold/process failures. We leveraged this bit of knowledge to get a second batch of cases manufactured without charge.
+- Positioning pegs for the 9P auxillary connector are missing/deformed on every case
 
-:::info
-The sudden decision to run our cases on a Sunday without a final test seems to have caused all sorts of problems. The "nut master" with the most experince handing this type of tooling had the day off, so they used unqualified hourly labor instead. Our factory rep was supposed to do quality control, but they left after 20 minutes because "it's Sunday" and tried to put that on us. The whole thing was weird.
+![](./img/buried-nuts.jpg)
 
-We hoped to come out of this experience with some definitive lesson about injection molding, but we haven't found it. The general rule applies though: go hang out at the factory if your production is critical/time sensitive.
-:::
+- Insert nuts are in the wrong place or buried
+- Enough plastic leaked into the base of the insert nut that 8mm bolts no longer sit flush against the front of the case
+
+After months of delay this was a huge bummer. The factory asked us to "help them out" and use the cases anyways. Then, they wanted to charge us even more for a second batch using PC.
+
+A different factory boss had a look at the cases and stated bluntly: mold build-up (*zhan mo*) and infrequent cleaning, 100% reject rate. We dropped that phrase to our factory and they started preparing for a second run without further comment. 
 
 ### Batch 2
 
-PIC of good cases
+![](./img/case-pp-final.jpg)
 
-The second batch is beautiful, even better than the intial samples. It seems they really slowed down the machine and took their time getting it done.
+The second batch is beautiful, even better than the initial samples. They really slowed down the machine and took their time getting it done.
 
-The insert nuts are still too short, they should have been 4mm to accomidate an 8mm bolt. We sourced 7mm bolts and they fit perfectly, though they are non-standard.
+The insert nuts are still too short, a single test would have caught that over the last four months. We're just going to live with that and enjoy having some functioning cases.
 
+:::info
+The sudden decision to run our cases on a Sunday without a final test seems related to all sorts of problems. The "nut master" with the most experience handing this type of tooling had the day off, so they used unqualified hourly labor instead. Our factory rep was supposed to do quality control, but they left after 20 minutes because "it's Sunday". The whole thing was weird.
+
+We hoped to come out of this experience with a definitive lesson about injection molding, but we haven't found it. The general rule applies though: go hang out at the factory if your production is critical/time sensitive.
+:::
