@@ -34,6 +34,8 @@ Raspberry Pi RP2040 microcontroller in QFN-56 package.
 
 1Gbit SPI NAND flash with EEC in UPDFN-8 package. Larger sizes (up to 8Gbit) are available, but are not currently supported by the firmware.
 
+- REV10+ replaces removable flash socket with onboard NAND flash to improve shared SPI bus speed
+
 * [MT29F1G01ABAFDWB-IT:F](https://item.szlcsc.com/3176239.html) (Micron)
 
 ## 74LVC1T45 bi-directional buffer SC70-6/SOT363

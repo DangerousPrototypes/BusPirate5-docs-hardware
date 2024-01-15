@@ -3,11 +3,11 @@ sidebar_position: 10
 sidebar_label: 'Bill  of Materials'
 ---
 
-# Bill of Materials REV 10
+# Bill of Materials REV10
 
 ![Boxes with reels of components ready for assembly](./img/bom-rev10.jpg)
 
-REV 10 is the first production version (from January 2024) that ships in an enclosure. Find your revision number on the PCB near the production date (bottom) and the 10 pin connector (top). 
+REV10 is the first production version (from January 2024) that ships in an enclosure. Find your revision number on the PCB near the production date (bottom) and the 10 pin connector (top). 
 
 ## Change Log
 REV 10 started as a [BOM cleanup](https://forum.buspirate.com/t/analog-parts-notes-for-rev9/24), but also addresses [two issues in REV 8](https://forum.buspirate.com/t/rev10-nand-flash-and-analog-mux-update/105).
