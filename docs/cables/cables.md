@@ -40,7 +40,7 @@ Shrink tube varies wildly in color quality. A lot of colors just don't pop: dull
 
 ## Auxiliary Cable 
 
-![](./img/cable-aux-rev1.jpg)
+![](./img/cable-aux-rev1-white.jpg)
 
 |Pin|Wire Type|Wire Color|Wire Length|Connector 1| Connector 2|Bus Pirate Signal|
 |-|-|-|-|-|-|-|
@@ -50,6 +50,10 @@ Shrink tube varies wildly in color quality. A lot of colors just don't pop: dull
 A 9 pin cable connects the Bus Pirate auxiliary connector to external tools like logic analyzers, oscilloscopes etc. 
 
 The first version of this cable had all black crimp housings and it was a pain to find the right tiny wire. We sourced white plastic crimp housings and [dyed them to match the color labels](https://forum.buspirate.com/t/dyed-abs-button-caps/119) on the display and probe cable. Just for fun we dyed the SH connector black as well. Now it's a lot easier to use.
+
+:::note
+The first version of the auxiliary cable has all back crimp housings. The second version has color coded crimp housings. Version one is in the current auxiliary cable kit, version 2 is available separately until we receive matching Y and splitter cables to make a kit.
+:::
 
 :::info
 ABS plastic can be dyed. The supplier is a factory that specializes in dying plastic clothing buttons and beads. First they do a material test with a random color. If everything looks good, they quote a price per gram of plastic dyed. We also used this technique to [color button caps](/enclosure/hardware#dyed-plastic-button-caps) for the enclosure.
