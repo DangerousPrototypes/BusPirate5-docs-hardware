@@ -5,7 +5,7 @@ sidebar_label: 'Introduction'
 
 # Bus Pirate 5 Hardware Docs
 
-![](./img/bp-rgb-dark.jpg)
+![](./img/bp5rev10-lit-black2.jpg) 
 
 Bus Pirate 5 is the latest edition of the original universal serial interface trusted by hackers since 2008. 
 

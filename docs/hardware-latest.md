@@ -6,7 +6,7 @@ slug: /
 
 # Bus Pirate 5 REV 10 Hardware
 
-![](./img/bp-rgb-dark.jpg)
+![](./img/bp5rev10-lit-black2.jpg)
 
 Bus Pirate 5 is an open-source hardware debugging tool designed to eliminate the frustrations and challenges commonly associated with hacking and hardware tinkering. We tried to tackle all the pain points, from bizarre and uncomfortable acrobatics with multimeter probes to the hassle of connecting multiple test hooks to a single pin. With Bus Pirate 5, information you need is right where you need it.
 
