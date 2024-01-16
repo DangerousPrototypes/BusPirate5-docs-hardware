@@ -21,3 +21,11 @@ Top and bottom shell professionally 3D printed in SLA epoxy. This print is for t
 |-|-|-|-|-|-|
 |Nuts  |M3x3mmLx4.0mmD|M3 brass insert nut  |4  ||
 
+## M3 8mm DIN7991 bolt
+  
+![](./img/din7991.png)
+
+|**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
+|-|-|-|-|-|-|
+|Bolts|M3x8mm DIN7991|M3 8mm bolt DIN7991 silver|4||Silver color|
+

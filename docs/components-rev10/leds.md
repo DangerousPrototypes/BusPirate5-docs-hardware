@@ -37,9 +37,11 @@ Example:
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-|LED702 LED703 LED705 LED706 LED710 LED713 LED714 LED715 LED718|LED6028|SK6812-mini-e|9|
+|LED702 LED703 LED705 LED706 LED710 LED713 LED714 LED715 LED718 LED719|LED6028|SK6812-mini-e|10|
 
-SK6812 RGB LED that mounts lens-down and shines through a hole in the PCB. Commonly used to light RGB keyboards. Available from multiple manufacturers, Taobao and 1688.com.
+SK6812 RGB LED that mounts lens-down and shines through a hole in the PCB. Commonly used to light RGB keyboards. 
+
+- REV10+ adds 1 additional SK6812-mini-e
 
 Example:
 
@@ -51,11 +53,13 @@ Example:
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-|LED701 LED704 LED707 LED708 LED712 LED716 LED717|4020|SK6812-side-a|7||
+|LED701 LED704 LED707 LED708 LED712 LED716 LED717 LED720|4020|SK6812-side-a|8||
 
 SK6812 RGB LED with side mounted lens. Commonly used on RGB LED strips. Available from multiple manufacturers. 
 
-:::tip
+- REV10+ adds 1 additional SK6812-side-a
+
+:::caution
 There are two common footprints for SK6812-side-a. The preferred part has evenly spaced pads that bend 90 degrees and extend up the back of the part. We have had the best success reflow soldering this footprint, and it is MUCH easier to hand rework.
 :::
 

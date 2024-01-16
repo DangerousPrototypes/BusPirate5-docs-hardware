@@ -26,6 +26,8 @@ All of the Bus Pirate cables are made with super soft and flexible premium silic
 |9|22AWG Silicone|Gray|270mm|φ1.5mm|White|Woer|20mm|IO7 IO7|Black|
 |10|22AWG Silicone|Black|270mm|φ1.5mm|Black|Woer|20mm|GND GND|White|
 
+A high quality probe cable to connect the Bus Pirate to test hooks, milled breadboard pins and pin header.
+
 ### TJC8 connector
 Keyed, locking 2.54mm female connector. TJC8 or HX25418.
 
@@ -36,14 +38,22 @@ Keyed, locking 2.54mm female connector. TJC8 or HX25418.
 
 Shrink tube varies wildly in color quality. A lot of colors just don't pop: dull lifeless pastels or just too dark. We ended up sourcing from two manufacturers to get a reasonably nice set of colors. Woer is able to print on the shrink tube, and also printed on the tubes from Dongguan Sanlian.
 
-## Logic Analyzer Cable
+## Auxiliary Cable 
 
-![](./img/cable-aux.jpg)
+![](./img/cable-aux-rev1.jpg)
 
 |Pin|Wire Type|Wire Color|Wire Length|Connector 1| Connector 2|Bus Pirate Signal|
 |-|-|-|-|-|-|-|
 |1-8|30AWG Silicone|Gray|170mm|9pin 1.0mm 'SH', female|1pin 2.54mm 'DuPont', female|IO0-IO7|
 |9|30AWG Silicone|Black|170mm|-|1pin 2.54mm 'DuPont', female|Ground|
+
+A 9 pin cable connects the Bus Pirate auxiliary connector to external tools like logic analyzers, oscilloscopes etc. 
+
+The first version of this cable had all black crimp housings and it was a pain to find the right tiny wire. We sourced white plastic crimp housings and [dyed them to match the color labels](https://forum.buspirate.com/t/dyed-abs-button-caps/119) on the display and probe cable. Just for fun we dyed the SH connector black as well. Now it's a lot easier to use.
+
+:::info
+ABS plastic can be dyed. The supplier is a factory that specializes in dying plastic clothing buttons and beads. First they do a material test with a random color. If everything looks good, they quote a price per gram of plastic dyed. We also used this technique to [color button caps](/enclosure/hardware#dyed-plastic-button-caps) for the enclosure.
+:::
 
 ## Y Splitter Cable
 
@@ -53,6 +63,8 @@ Shrink tube varies wildly in color quality. A lot of colors just don't pop: dull
 |-|-|-|-|-|-|
 |1|22AWG Silicone|Black/Red/Gray|170mm|1pin 2.54mm 'DuPont', female|2*1pin 2.54mm 'DuPont', female|
 
+A high quality splitter cable to make multiple connections to a single pin. Connect power and ground to multiple devices, or share a 1-Wire, I2C or SPI bus between several chips.
+
 ## Jumper Cable
 
 ![](./img/cable-jumpers.jpg)
@@ -60,5 +72,7 @@ Shrink tube varies wildly in color quality. A lot of colors just don't pop: dull
 |Pin|Wire Type|Wire Color|Wire Length|Connector 1| Connector 2|
 |-|-|-|-|-|-|
 |1|22AWG Silicone|Black/Red/Gray|170mm|1pin 2.54mm 'DuPont', female|1pin 2.54mm 'DuPont', female|
+
+A high quality jumper wire to quickly connect your latest breakout board.
 
 
