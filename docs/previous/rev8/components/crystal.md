@@ -5,6 +5,10 @@ sidebar_label: 'Crystal'
 
 # Crystal
 
+:::info
+**Bus Pirate 5 REV8 preview is no longer in production. [See the latest version](/).**
+:::
+
 ![](./img/crystal2.jpg)
 
 ## Crystal 12MHz 18pf - 20pF, SMD3225-4 (4 pin)

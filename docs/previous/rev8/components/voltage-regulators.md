@@ -5,6 +5,10 @@ sidebar_label: 'Voltage Regulators'
 
 # Voltage Regulators
 
+:::info
+**Bus Pirate 5 REV8 preview is no longer in production. [See the latest version](/).**
+:::
+
 ![](./img/vreg.jpg)
 
 ## LDO voltage regulator 3.3volts 200mA+ 1% accuracy SOT-89

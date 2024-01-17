@@ -5,7 +5,7 @@ sidebar_label: 'Bus Pirate 5 PCB only (EOL)'
 # Bus Pirate 5 PCB Only Package
 
 :::info
-**Bus Pirate 5 REV8 preview is no longer in production. **
+**Bus Pirate 5 REV8 preview is no longer in production. [See the latest version](/).**
 :::
 
 import FooterCart from '/_common/_footer/_footer-cart.md' 

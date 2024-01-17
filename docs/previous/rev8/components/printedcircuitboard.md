@@ -5,6 +5,10 @@ sidebar_label: 'Printed Circuit Board'
 
 # Printed Circuit Board
 
+:::info
+**Bus Pirate 5 REV8 preview is no longer in production. [See the latest version](/).**
+:::
+
 ![](./img/pcb.jpg)
 
 ### PCB 4 layers 60x60mm

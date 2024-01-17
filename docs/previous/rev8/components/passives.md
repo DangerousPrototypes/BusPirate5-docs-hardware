@@ -5,6 +5,10 @@ sidebar_label: 'Passives'
 
 # Passive components
 
+:::info
+**Bus Pirate 5 REV8 preview is no longer in production. [See the latest version](/).**
+:::
+
 ![](./img/passives2.jpg)
 
 ## Resistors 1% 0402

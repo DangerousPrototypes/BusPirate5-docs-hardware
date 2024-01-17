@@ -5,6 +5,10 @@ sidebar_label: 'Transistors and MOSFETs'
 
 # Transistors and MOSFETs
 
+:::info
+**Bus Pirate 5 REV8 preview is no longer in production. [See the latest version](/).**
+:::
+
 ![](./img/transistors.jpg)
 
 :::tip

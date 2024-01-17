@@ -5,6 +5,10 @@ sidebar_label: 'LEDs and Display'
 
 # LEDs and Display
 
+:::info
+**Bus Pirate 5 REV8 preview is no longer in production. [See the latest version](/).**
+:::
+
 ![](./img/lcd-cover.jpg)
 
 ## LCD 2.0" IPS LCD 240x320 ST7789V with SPI interface (QT200H1201)

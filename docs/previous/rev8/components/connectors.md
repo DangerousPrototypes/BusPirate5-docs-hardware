@@ -5,6 +5,10 @@ sidebar_label: 'Connectors'
 
 # Connectors
 
+:::info
+**Bus Pirate 5 REV8 preview is no longer in production. [See the latest version](/).**
+:::
+
 ![](./img/connectors.jpg)
 
 ## TF flash card Socket

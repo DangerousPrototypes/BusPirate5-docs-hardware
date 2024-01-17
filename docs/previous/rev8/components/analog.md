@@ -5,6 +5,10 @@ sidebar_label: 'Analog'
 
 # Analog Components
 
+:::info
+**Bus Pirate 5 REV8 preview is no longer in production. [See the latest version](/).**
+:::
+
 ![](./img/analog.jpg)
 
 ## Op-amp rail to rail SOT-23-5

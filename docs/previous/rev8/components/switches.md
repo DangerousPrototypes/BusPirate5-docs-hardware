@@ -5,6 +5,10 @@ sidebar_label: 'Switches'
 
 # Switches
 
+:::info
+**Bus Pirate 5 REV8 preview is no longer in production. [See the latest version](/).**
+:::
+
 ![](./img/switches.jpg)
 
 ## SPST 4.2x3.2mm

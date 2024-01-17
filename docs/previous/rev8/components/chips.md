@@ -5,6 +5,10 @@ sidebar_label: 'Chips'
 
 # Chips
 
+:::info
+**Bus Pirate 5 REV8 preview is no longer in production. [See the latest version](/).**
+:::
+
 ![](./img/chips2.jpg)
 
 ## Microcontroller RP2040 QFN-56
