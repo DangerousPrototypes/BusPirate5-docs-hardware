@@ -11,6 +11,10 @@ Bus Pirate 5 is the latest edition of the original universal serial interface tr
 
 Can't get a chip to work? Is it the circuit, code, bad part or a burned out pin? The Bus Pirate sends commands over common serial protocols so you can get to know a chip before prototyping. Updated with tons of new features and tools, talking to chips and probing interfaces is more fun than ever!
 
+import FooterCart from '/_common/_footer/_footer-cart.md' 
+
+<FooterCart/>
+
 ## RP2040
 - Based on Raspberry Pi Foundation RP2040
 - 128Mbit flash storage for lots of features
@@ -59,47 +63,23 @@ Can't get a chip to work? Is it the circuit, code, bad part or a burned out pin?
 ## USB C connector
 - ...but limited to the USB speeds supported by the RP2040
 
-
-## Resources
-import FooterDocs from '../_common/_footer/_footer-docs.md' 
-
-<FooterDocs/>
-
-## Join the fun
-
-function MyComponent(){
-    return (
-        <a href="#" className="btn">  
-
-        Get Bus Pirate 5 & Accessories
-
-        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>   
-        </a>
-        <br/><br/>
-    );
-
-}
-
-### Get Bus Pirate 5
-import FooterGet from '../_common/_footer/_footer-get.md' 
-
-<button href="#" className="btn">
-<img fill="white" className="btn-cart" src="/img/cart-shopping-solid.svg"/>
-<span>Get Bus Pirate 5 & Accessories</span>
-</button>
-
-<MyComponent/>
-
+## Get Bus Pirate 5
+import FooterGet from '/_common/_footer/_footer-get.md' 
 
 <FooterGet/>
 
+### Resources
+import FooterDocs from '/_common/_footer/_footer-docs.md' 
+
+<FooterDocs/>
+
 ### Files
-import FooterFiles from '../_common/_footer/_footer-files.md'
+import FooterFiles from '/_common/_footer/_footer-files.md'
 
 <FooterFiles/>
 
 ### Community
-import FooterCommunity from '../_common/_footer/_footer-community.md'
+import FooterCommunity from '/_common/_footer/_footer-community.md'
 
 <FooterCommunity/>
 

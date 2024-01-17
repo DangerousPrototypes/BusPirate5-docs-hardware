@@ -4,6 +4,12 @@ sidebar_label: 'Bus Pirate 5 Pack'
 ---
 # Bus Pirate 5 Package
 
+![](./img/bp5rev10-retail-pack.jpg)
+
+import FooterCart from '/_common/_footer/_footer-cart.md' 
+
+<FooterCart/>
+
 ## Contents
 
 |Quantity|Description|
@@ -36,3 +42,8 @@ sidebar_label: 'Bus Pirate 5 Pack'
 |**EAN**|**Contents**|**Version**|
 |-|-|-|
 |6098403367367|Bus Pirate 5 REV10 with enclosure|REV10|
+
+## Get Bus Pirate 5
+import FooterGet from '/_common/_footer/_footer-get.md' 
+
+<FooterGet/>

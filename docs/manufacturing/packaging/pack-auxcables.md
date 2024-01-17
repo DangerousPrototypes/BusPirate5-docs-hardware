@@ -6,6 +6,10 @@ sidebar_label: 'Auxiliary Cables Pack'
 
 ![](./img/cable-a.jpg)
 
+import FooterCart from '/_common/_footer/_footer-cart.md' 
+
+<FooterCart/>
+
 ## Contents
 |Quantity|Cable|Length|Description|
 |-|-|-|-|
@@ -39,3 +43,8 @@ sidebar_label: 'Auxiliary Cables Pack'
 |**EAN**|**Contents**|**Version**|
 |-|-|-|
 |6098403367381|Auxiliary Cables|REV0|
+
+## Get Bus Pirate 5
+import FooterGet from '/_common/_footer/_footer-get.md' 
+
+<FooterGet/>

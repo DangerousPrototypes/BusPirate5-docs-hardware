@@ -10,6 +10,11 @@ slug: /
 
 Bus Pirate 5 is an open-source hardware debugging tool that converts simple commands into common bus protocols such as 1-Wire, I2C, SPI, UART, several LEDs and more. Send commands to a chip or sensor and get the response, without writing a line of code. 
 
+import FooterCart from '/_common/_footer/_footer-cart.md' 
+
+<FooterCart/>
+<br/>
+<br/>
 <div class="img-center"> 
 
 ![](./img/bp5rev10/bp-term2.png) 
@@ -327,25 +332,24 @@ Previous revisions had three buttons (up/ok/down) to control a menu on the LCD. 
 - [Interactive BOM](pathname:///bp5-rev10-bom.html). Created with [Interactive HTML BOM plugin](https://github.com/openscopeproject/InteractiveHtmlBom) for [KiCad](https://www.kicad.org/).
 - [Schematic](./img/bp5rev10/buspirate-5-rev10-schematic.pdf) (PDF)
 - [Component placement](./img/bp5rev10/buspirate-5-rev10-placement.pdf) (PDF)
-## Join the fun
 
-## Other Documentation
-import FooterDocs from '../_common/_footer/_footer-docs.md' 
-
-<FooterDocs/>
-
-### Get Bus Pirate 5
-import FooterGet from '../_common/_footer/_footer-get.md' 
+## Get Bus Pirate 5
+import FooterGet from '/_common/_footer/_footer-get.md' 
 
 <FooterGet/>
 
+### More Documentation
+import FooterDocs from '/_common/_footer/_footer-docs.md' 
+
+<FooterDocs/>
+
 ### Files
-import FooterFiles from '../_common/_footer/_footer-files.md'
+import FooterFiles from '/_common/_footer/_footer-files.md'
 
 <FooterFiles/>
 
 ### Community
-import FooterCommunity from '../_common/_footer/_footer-community.md'
+import FooterCommunity from '/_common/_footer/_footer-community.md'
 
 <FooterCommunity/>
 

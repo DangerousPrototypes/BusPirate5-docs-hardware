@@ -5,8 +5,12 @@ sidebar_label: 'Bus Pirate 5 PCB only (EOL)'
 # Bus Pirate 5 PCB Only Package
 
 :::info
-**The preview set is no longer in production. **
+**Bus Pirate 5 REV8 preview is no longer in production. **
 :::
+
+import FooterCart from '/_common/_footer/_footer-cart.md' 
+
+<FooterCart/>
 
 ## Contents
 
@@ -51,3 +55,8 @@ The wrap for "Bus Pirate 5 (PCB & enclosure)" is also used for the PCB only vers
 |**EAN**|**Contents**|**Version**|
 |-|-|-|
 |6098403367398|Bus Pirate 5 (assembled PCB only)|REV8|
+
+## Get Bus Pirate 5
+import FooterGet from '/_common/_footer/_footer-get.md' 
+
+<FooterGet/>

@@ -10,3 +10,9 @@ sidebar_label: 'Introduction'
 ![](./img/bp5-rev10-3d-bottom.jpg)
 
 ![](./img/bp5rev10-3d-top.jpg)
+
+
+## Get Bus Pirate 5
+import FooterGet from '/_common/_footer/_footer-get.md' 
+
+<FooterGet/>

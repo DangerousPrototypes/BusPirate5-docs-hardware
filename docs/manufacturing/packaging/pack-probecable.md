@@ -6,6 +6,10 @@ sidebar_label: 'Probe Cable Pack'
 
 ![](./img/cable-p.jpg)
 
+import FooterCart from '/_common/_footer/_footer-cart.md' 
+
+<FooterCart/>
+
 ## Contents
 
 |Quantity|Component|Length|Description|
@@ -37,3 +41,8 @@ sidebar_label: 'Probe Cable Pack'
 |**EAN**|**Contents**|**Version**|
 |-|-|-|
 |6098403367374|Probe Cable|REV0|
+
+## Get Bus Pirate 5
+import FooterGet from '/_common/_footer/_footer-get.md' 
+
+<FooterGet/>

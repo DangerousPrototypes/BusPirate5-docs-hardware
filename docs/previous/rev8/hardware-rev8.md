@@ -9,6 +9,12 @@ sidebar_label: 'Hardware'
 
 Bus Pirate 5 is an open-source hardware debugging tool designed to eliminate the frustrations and challenges commonly associated with hacking and hardware tinkering. We tried to tackle all the pain points, from bizarre and uncomfortable acrobatics with multimeter probes to the hassle of connecting multiple test hooks to a single pin. With Bus Pirate 5, information you need is right where you need it.
 
+import FooterCart from '/_common/_footer/_footer-cart.md' 
+
+<FooterCart/>
+
+## Features
+
 - **Bulldozer buffered IO** - 1.65 to 5volt direct interfacing with 8 bidirectional buffered IOs
 - **Voltage measurement extravaganza** - Bus Pirate 5 displays voltage readings for every pin, right on its vibrant LCD screen and in the terminal statusbar
 - **Current measurement** - Gain insights into the status of a device by monitoring current usage in real time
@@ -304,18 +310,6 @@ Previous revisions had three buttons (up/ok/down) to control a menu on the LCD. 
 
 Bus Pirate 5 is used through a serial terminal. The optional VT100 mode supports color and a live statusbar view of the function and voltage on each pin, such as frequency generation and measurement. If an TF flash card is inserted, the Bus Pirate will save your terminal preferences for the next session.
 
-## Other Documentation
-Bus Pirate 5 documentation is broken into [hardware](https://hardware.buspirate.com/introduction) and [firmware](https://firmware.buspirate.com/introduction) sections so it can be versioned easily with each update. Here's some other fun stuff you might enjoy.
-- [Component selection and sourcing](../rev8/components/introduction)
-- [Case/enclosure](enclosure/fdm-shell)
-- [Cables](https://firmware.buspirate.com/overview/cables)
-- [Milled breadboard pins](https://firmware.buspirate.com/overview/milled-breadboard-pins)
-- [Hardware users guide](https://firmware.buspirate.com/overview/hardware)
-- [Firmware tutorials](https://firmware.buspirate.com/tutorial-basics/quick-setup)
-- [Command reference](https://firmware.buspirate.com/command-reference/all-commands)
-- [Firmware development](development/code) and [translation](development/translation)
-- [Manufacturing resources](category/manufacturing)
-
 ## Interactive BOM
 
 ![](./img/bp5rev8/bp5-bom-rev8.png)
@@ -323,21 +317,23 @@ Bus Pirate 5 documentation is broken into [hardware](https://hardware.buspirate.
 [Bus Pirate 5 REV8 interactive BOM](pathname:///bp5-rev8-bom.html). Created with [Interactive HTML BOM plugin](https://github.com/openscopeproject/InteractiveHtmlBom) for [KiCad](https://www.kicad.org/).
 
 
-## Join the fun
-### Get Bus Pirate 5
-- [Bus Pirate 5 assembled PCB preview release](https://dirtypcbs.com/store/designer/details/ian/6621/bus-pirate-5-preview-version-pcb-only)
-- [Bus Pirate Premium Probe Cable](https://dirtypcbs.com/store/designer/details/ian/6619/bus-pirate-5-probe-cable-kit)
-- [Bus Pirate Premium Auxiliary Cables](https://dirtypcbs.com/store/designer/details/ian/6620/auxilary-cable-kit)
-- Bus Pirate 5 and enclosure (coming soon!)
+## Get Bus Pirate 5
+import FooterGet from '/_common/_footer/_footer-get.md' 
+
+<FooterGet/>
+
+### More Documentation
+import FooterDocs from '/_common/_footer/_footer-docs.md' 
+
+<FooterDocs/>
 
 ### Files
-- [Bus Pirate 5 hardware repository](https://github.com/DangerousPrototypes/BusPirate5-hardware)
-- [Bus Pirate 5 firmware repository](https://github.com/DangerousPrototypes/BusPirate5-firmware)
+import FooterFiles from '/_common/_footer/_footer-files.md'
+
+<FooterFiles/>
 
 ### Community
-- [Forum](https://forum.buspirate.com)
-- [Blog](https://buspirate.com/) and mailing list
-- [Mastodon](https://mastodon.social/@buspirate)
-- [BlueSky](https://bsky.app/profile/buspirate.bsky.social)
-- [Twitter](https://twitter.com/dangerousproto)
+import FooterCommunity from '/_common/_footer/_footer-community.md'
+
+<FooterCommunity/>
 

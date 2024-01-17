@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 5
 sidebar_label: 'Bill of Materials'
 ---
 
@@ -8,6 +8,15 @@ sidebar_label: 'Bill of Materials'
 ![](./img/bom-rev8.jpg)
 
 REV 8 was produced in a small prototype production batch (August 2023) and an initial production batch (September 2023). Check your Bus Pirate 5 PCB to find your revision number located near the TF flash card (bottom) and the 10 pin connector (top). We intend to move to REV 9 (BOM cleanup) as soon as validation and FCC testing are completed. There are no feature changes in REV 9, just tweaks to the supplier list.
+
+import FooterCart from '/_common/_footer/_footer-cart.md' 
+
+<FooterCart/>
+
+## Change Log
+- Preview production batch
+
+##Bill of Materials
 
 | Brand | Part | Package | Description| Reel Quantity | Supplier |
 |-|-|-|-|-|-|
@@ -62,4 +71,7 @@ REV 8 was produced in a small prototype production batch (August 2023) and an in
 |SHOU HAN(首韩)| TS3425BA 098 2.5H 250gf|4.2x3.4x2.5mm|4x3x2.5H button 250gf|3000|SHOU HAN(首韩)|
 |SHOU HAN(首韩)| TS3315A 250gf 025 |3.3x3.3x1.5mm|3x3x2.5H button 250gf|4000|SHOU HAN(首韩)|
 
+## Get Bus Pirate 5
+import FooterGet from '/_common/_footer/_footer-get.md' 
 
+<FooterGet/>

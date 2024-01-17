@@ -8,7 +8,7 @@ sidebar_label: 'Injection Molded'
 ![](./img/enclosure-top.jpg)
 
 ## Components
-### PP Shell
+### Polypropylene Shell
 
 ![](./img/case-pp-final.jpg)
 
@@ -68,6 +68,11 @@ Bus Pirate 5 REV0 to REV9 included an SD card socket. SD cards are slow in SPI m
 In an act of desperation we [modeled a hole cover](https://github.com/DangerousPrototypes/BusPirate5-hardware/tree/main/enclosure) and SLA printed it. Despite being smaller than the allowed specs, our SLA supplier was happy to print batches of them. It turned out very well - super thin and a good color match to the case material. 
 
 The SD card slot will be removed in a future revision of the case.
+
+## Get Bus Pirate 5
+import FooterGet from '/_common/_footer/_footer-get.md' 
+
+<FooterGet/>
 
 ## Manufacturing Notes
 

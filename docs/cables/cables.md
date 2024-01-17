@@ -9,6 +9,10 @@ sidebar_label: 'Cables'
 
 All of the Bus Pirate cables are made with super soft and flexible premium silicone coated wire. The inner strands are very fine tinned copper. 22AWG has 60 strands 0.08mm thick (bottom), compared to 8-12 strands in common wires (top). The silicone coating has a very nice feel, and is tolerant of high heat and chemicals.
 
+import FooterCart from '/_common/_footer/_footer-cart.md' 
+
+<FooterCart/>
+
 ## Probe Cable
 
 ![](./img/cable-probe.jpg)
@@ -78,5 +82,10 @@ A high quality splitter cable to make multiple connections to a single pin. Conn
 |1|22AWG Silicone|Black/Red/Gray|170mm|1pin 2.54mm 'DuPont', female|1pin 2.54mm 'DuPont', female|
 
 A high quality jumper wire to quickly connect your latest breakout board.
+
+## Get Bus Pirate 5
+import FooterGet from '/_common/_footer/_footer-get.md' 
+
+<FooterGet/>
 
 

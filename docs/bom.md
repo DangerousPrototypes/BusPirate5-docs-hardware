@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 5
 sidebar_label: 'Bill  of Materials'
 ---
 
@@ -8,6 +8,10 @@ sidebar_label: 'Bill  of Materials'
 ![Boxes with reels of components ready for assembly](./img/bom-rev10.jpg)
 
 REV10 is the first production version (from January 2024) that ships in an enclosure. Find your revision number on the PCB near the production date (bottom) and the 10 pin connector (top). 
+
+import FooterCart from '/_common/_footer/_footer-cart.md' 
+
+<FooterCart/>
 
 ## Change Log
 REV10 started as a [BOM cleanup](https://forum.buspirate.com/t/analog-parts-notes-for-rev9/24), but also addresses [two issues in REV8](https://forum.buspirate.com/t/rev10-nand-flash-and-analog-mux-update/105).
@@ -92,3 +96,8 @@ REV10 started as a [BOM cleanup](https://forum.buspirate.com/t/analog-parts-note
 - Footprint = Part required a PCB footprint change
 - Value = Value of part changed/new part value on this BOM revision
 - New = New component in this revision
+
+## Get Bus Pirate 5
+import FooterGet from '/_common/_footer/_footer-get.md' 
+
+<FooterGet/>

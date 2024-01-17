@@ -20,3 +20,7 @@ Four styles of scratch and sniff "genuine" stickers seal the Bus Pirate anti-sta
 
 120 grams of scent material is enough for two batches of stickers. The scent molecules are the consistency of water, but they need to be really thick for the encapsulation process. 60 grams of Caprylic Capric Triglyceride, a common cosmetic ingredient, gave it the viscosity of a heavy oil.
 
+## Get Bus Pirate 5
+import FooterGet from '/_common/_footer/_footer-get.md' 
+
+<FooterGet/>
