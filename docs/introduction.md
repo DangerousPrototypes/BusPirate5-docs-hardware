@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-sidebar_label: 'Introduction'
+sidebar_label: 'Bus Pirate 5 Specs'
 ---
 
-# Bus Pirate 5 Hardware Docs
+# Bus Pirate 5 Hardware Specs
 
 ![](./img/bp5rev10/bp5rev10-cover-angle.jpg) 
 
