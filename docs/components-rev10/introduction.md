@@ -3,9 +3,9 @@ sidebar_position: 1
 sidebar_label: 'Introduction'
 ---
 
-# Bus Pirate 5 Component Guide REV10
+# Bus Pirate 5 REV10 Component Guide
 
-![](./img/bp-rgb-dark.jpg)
+![](./img/bp5rev10-cover-2.jpg) 
 
 ![](./img/bp5-rev10-3d-bottom.jpg)
 

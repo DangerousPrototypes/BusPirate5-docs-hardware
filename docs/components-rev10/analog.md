@@ -33,7 +33,7 @@ Example:
 
 |**Reference**|**Package**|**Value**|**Quantity**|**Rating**|**Note**|
 |-|-|-|-|-|-|
-|U504 U505|TSSOP-14|LMV324 |2  |5 volts  |R2R, Vos ~0.4V typical, ~3.5V max  |
+|U504 U505|TSSOP-14|LMV324 |2  |5 volts  |R2R, Vos ~0.4mV typical, ~3.5mV max  |
 
 General purpose quad rail to rail op-amp with >1MHz GBP in TSSOP-14 package. 
 
