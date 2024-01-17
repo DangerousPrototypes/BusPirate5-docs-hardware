@@ -61,35 +61,47 @@ Can't get a chip to work? Is it the circuit, code, bad part or a burned out pin?
 
 
 ## Resources
-Bus Pirate 5 documentation is broken into [hardware](https://hardware.buspirate.com/introduction) and [firmware](https://firmware.buspirate.com/introduction) sections so it can be versioned easily with each update. Here's some other fun stuff you might enjoy.
-- [Component selection and sourcing](components/introduction)
-- [Case/enclosure](enclosure/injection-molded-shell)
-- [Cables](https://firmware.buspirate.com/overview/cables)
-- [Milled breadboard pins](https://firmware.buspirate.com/overview/milled-breadboard-pins)
-- [Hardware users guide](https://firmware.buspirate.com/overview/hardware)
-- [Firmware tutorials](https://firmware.buspirate.com/tutorial-basics/quick-setup)
-- [Command reference](https://firmware.buspirate.com/command-reference/all-commands)
-- [Firmware development](development/code) and [translation](development/translation)
-- [Manufacturing resources](category/manufacturing)
+import FooterDocs from '../_common/_footer/_footer-docs.md' 
+
+<FooterDocs/>
 
 ## Join the fun
+
+function MyComponent(){
+    return (
+        <a href="#" className="btn">  
+
+        Get Bus Pirate 5 & Accessories
+
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>   
+        </a>
+        <br/><br/>
+    );
+
+}
+
 ### Get Bus Pirate 5
-- [Bus Pirate 5 assembled PCB preview release](https://dirtypcbs.com/store/designer/details/ian/6621/bus-pirate-5-preview-version-pcb-only)
-- [Bus Pirate Premium Probe Cable](https://dirtypcbs.com/store/designer/details/ian/6619/bus-pirate-5-probe-cable-kit)
-- [Bus Pirate Premium Auxiliary Cables](https://dirtypcbs.com/store/designer/details/ian/6620/auxilary-cable-kit)
-- Bus Pirate 5 and enclosure (coming soon!)
+import FooterGet from '../_common/_footer/_footer-get.md' 
+
+<button href="#" className="btn">
+<img fill="white" className="btn-cart" src="/img/cart-shopping-solid.svg"/>
+<span>Get Bus Pirate 5 & Accessories</span>
+</button>
+
+<MyComponent/>
+
+
+<FooterGet/>
 
 ### Files
-- [Bus Pirate 5 hardware repository](https://github.com/DangerousPrototypes/BusPirate5-hardware)
-- [Bus Pirate 5 firmware repository](https://github.com/DangerousPrototypes/BusPirate5-firmware)
+import FooterFiles from '../_common/_footer/_footer-files.md'
+
+<FooterFiles/>
 
 ### Community
-- [Forum](https://forum.buspirate.com)
-- [Blog](https://buspirate.com/) and mailing list
-- [Mastodon](https://mastodon.social/@buspirate)
-- [BlueSky](https://bsky.app/profile/buspirate.bsky.social)
-- [Twitter](https://twitter.com/dangerousproto)
+import FooterCommunity from '../_common/_footer/_footer-community.md'
 
+<FooterCommunity/>
 
 ## FCC compliance statement
 This device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) this device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.

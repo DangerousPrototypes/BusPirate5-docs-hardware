@@ -21,11 +21,13 @@ sidebar_label: 'Probe Cable Pack'
 |Quantity|Item|Description|
 |-|-|-|
 |2|Zipper Bag|7x10cm|
+|1|Zipper Bag|4x6cm|
 |1|T Box|7x7x2cm (5.5x6.5x1.5cm inner)|
 |1|Label Wrap|'P'|
 
 - Place the probe cable in a bag
 - Place the test hooks in a second bag
+- Place the milled pins in the 4x6cm bag
 - Place the bags in a box
 - Seal the box with a wrap label
 - Shrink wrap the box
@@ -34,4 +36,4 @@ sidebar_label: 'Probe Cable Pack'
 
 |**EAN**|**Contents**|**Version**|
 |-|-|-|
-|6098403367374|Probe Cable|REV2|
+|6098403367374|Probe Cable|REV0|

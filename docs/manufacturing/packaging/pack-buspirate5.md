@@ -10,6 +10,8 @@ sidebar_label: 'Bus Pirate 5 Pack'
 |-|-|
 |1|Bus Pirate 5 & enclosure|
 |1|2mm HEX wrench|
+|2|Extra DIN7991 bolts|
+|5|Extra button caps|
 
 ## Packaging
 
@@ -24,7 +26,7 @@ sidebar_label: 'Bus Pirate 5 Pack'
 
 - Put the Bus Pirate in a tear bag
 - Impulse seal the bag
-- Place the 2mm HEX wrench in a zipper bag
+- Place the 2mm HEX wrench, 5 extra button caps and 2 extra DIN7991 bolts in a zipper bag
 - Place both bags in a box
 - Wrap the label around the box
 - Shrink wrap the box
@@ -33,4 +35,4 @@ sidebar_label: 'Bus Pirate 5 Pack'
 
 |**EAN**|**Contents**|**Version**|
 |-|-|-|
-|6098403367367|Bus Pirate 5 (PCB & enclosure)|REV8|
+|6098403367367|Bus Pirate 5 REV10 with enclosure|REV10|

@@ -39,23 +39,23 @@ Bus Pirate 5 is an open-source hardware debugging tool designed to eliminate the
 
 <div class="img-center">
 
-![](./img/bp5rev10/pcb-bottom.jpg)
+![](./img/bp5rev10/bp5-rev10-3d-bottom.jpg)
 
 </div>
 
 ## RP2040
 
-[![](./img/bp5rev8/rp2040.jpg)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/bp5rev10-micro-rp2040.jpg)](./img/bp5rev10/BusPirate-5-rev8.pdf)
 
 It's like the RP2040 was designed for a Bus Pirate. Two ARM cores, cheap external flash storage and the 4 PIO modules are true hardware interface to just about any esoteric protocol. No more bit-banged software libraries!
 
 The [RP2040](components/chips#microcontroller-rp2040-qfn-56) (U103) has a built-in bootloader that appears as a USB disk drive - just drag a firmware file into the drive to update the Bus Pirate. The bootloader is locked in ROM, there's no chance of accidentally erasing or corrupting it. What a happy little chip!
 
-We paired the RP2040 with a [128Mbit flash chip](components/chips#flash-128mbit-spi-soic8-208mil) (U102), the maximum supported. There should be plenty of room to add features for years to come. All that space has already paid off with features like multi-language support in a single firmware release.
+We paired the RP2040 with a [128Mbit flash chip](components/chips#flash-128mbit-spi-soic8-208mil) (U102), the maximum supported. There should be plenty of room to add features for years to come. All that space has already paid off with features like multi-language support in a single firmware release and integrated device demos.
 
 ### Output Expander
 
-[![](./img/bp5rev8/dio-expand.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/bp5rev10-dio-expand.jpg)](./img/bp5rev10/BusPirate-5-rev8.pdf) 
 
 While the RP2040 is an amazing chip that's fun to work with, we struggled with the low pin count. Two [74HC595 shift registers](components/chips#74hc595-shift-register-tssop-16) (U501/U502) unartfully clamped to a shared SPI bus give an extra 16 outputs to control hardware on the board. Currently these pins control the LCD backlight, toggle options in the programmable power supply unit, enable pull-up resistors and select channels on the analog multiplexer - slow tasks that lend themselves to serial to parallel output.
 
@@ -67,7 +67,7 @@ Some control signals are translated to 5volts so we can fit a 74HC(T)4066 and 74
 
 ### ADC Expander
 
-[![](./img/bp5rev8/adc-expand.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/bp5rev10-adc-expand.jpg)](./img/bp5rev10/BusPirate-5-rev8.pdf)
 
 Live voltage measurement on every pin was an absolute feature requirement for Bus Pirate 5. We want to to see whats happening at a glance, not perform bizarre and uncomfortable acrobatics with multimeter probes. 
 
@@ -81,11 +81,11 @@ Due to a lack of inputs on the RP2040, TF flash card detect and over current det
 
 ## 8 IO Units
 
-[![](./img/bp5rev8/buffers.jpg)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/bp5rev10-buffers.jpg)](./img/bp5rev10/BusPirate-5-rev8.pdf)
 
 ### 1.2-5volt Buffers
 
-[![](./img/bp5rev8/buffer-detail.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/buffer-detail.png)](./img/bp5rev10/BusPirate-5-rev8.pdf)
 
 IO pins are fitted with [74LVC1T45 bidirectional buffers](components/chips#74lvc1t45-bi-directional-buffer-sc70-6sot363), we call this chip 'the bulldozer'. Half of the buffer is powered at 3.3volts to interface the RP2040. The other half is powered from the VREF/VOUT pin at 1.2-5volts to interface with the outside world. 74LVC1T45 has great specs for hacking, like 5.5volt tolerant pins and a feature that disables everything when either half of the buffer is unpowered.
 
@@ -113,13 +113,13 @@ Revision 10 is fitted with buffers made by WuXi I-Core, a Chinese domestically m
 
 ### Toggleable Pull-up Resistors
 
-[![](./img/bp5rev8/pullup.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/bp5rev10-pullup.png)](./img/bp5rev10/BusPirate-5-rev8.pdf) 
 
 Each IO pin has a toggleable [10K pull-up resistor](components/passives#resistor-arrays-5-0402x4-convex). Onboard pull-ups are controlled by eight [SI2301](components-rev10/transistors-fets#pmos-fet-2a-vgs-1-volts-sot-523) PFETs with a very low (<1volt) threshold voltage. Pull-ups are powered through the VOUT/VREF pin.
 
 ### Main IO Connector
 
-![](./img/bp5rev8/connectors.jpg)
+![](./img/bp5rev10/connectors.jpg)
 
 Bus Pirate 5's main IO header uses a 2.54mm 10 pin [TJC8A/HX25418 connector](components/connectors#10p-male-254mm-right-angle-90-degrees-shrouded-connector) (J301). This is a keyed locking connector that works just as well with common jumper wires and 2.54mm 'DuPont' style connectors.
 
@@ -135,7 +135,7 @@ The pinout is logical! VOUT/VREF, IO0-IO7 and Ground. Bus Pirate v3 tried so ver
 
 ### Auxiliary IO Connector
 
-![](./img/bp5rev8/bp5-aux.jpg)
+![](./img/bp5rev10/bp5-aux.jpg)
 
 A secondary [1mm 9 pin connector](connectors#9p-male-10mm-right-angle-90-degrees-jst-sh-compatible-connector) (J302) under the main IO header is intended as a tap point for a logic analyzer. No need to balance two or three probes on a single tiny chip lead, access the bus activity from this secondary header.
 
@@ -150,7 +150,7 @@ The 1mm 9 pin connector mates with 'SH' style cables.
 
 ## Programmable Power Supply Unit
 
-[![](./img/bp5rev8/ppsu.jpg)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/bp5rev10-ppsu.jpg)](./img/bp5rev10/BusPirate-5-rev8.pdf)
 
 The bulldozer IO buffers run from 1.2 to 5volts, they need a power supply to match. The programmable power supply unit is another killer feature of Bus Pirate 5. 
 - 1-5volts adjustable output, 400mA max
@@ -160,7 +160,7 @@ The bulldozer IO buffers run from 1.2 to 5volts, they need a power supply to mat
 
 ### Adjustable Output 1 to 5volts
 
-[![](./img/bp5rev8/vreg.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/bp5rev10-vreg.png)](./img/bp5rev10/BusPirate-5-rev8.pdf)
 
 The heart of the programmable power supply is a 0.8 to 5volt [adjustable output voltage regulator](components/voltage-regulators#adjustable-ldo-vreg-with-08v-to-50v-output-sot-23-5) (U403). Normally fixed resistor values set the output voltage of an adjustable regulator, but we've given it programmable output [by margining](https://e2e.ti.com/blogs_/archives/b/precisionhub/posts/give-your-voltage-regulator-the-margin-it-deserves) the feedback pin with an RP2040 pulse width modulator. The PWM output of the RP2040 is filtered through a 10K resistor (R414) and 100nF capacitor (C415), then buffered with an op-amp (U603).
 
@@ -186,7 +186,7 @@ A common 1.25V-5V adjustable regulator can be used with the correct resistor val
 
 ### Current Sense
 
-[![](./img/bp5rev8/isense.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/bp5rev10-isense.png)](./img/bp5rev10/BusPirate-5-rev8.pdf)
 
 Current consumption can be used as a proxy to debug a circuit. Is there a short? Is this chip even running? This is certainly evident in the Shenzhen mobile phone repair markets where current meters taped into cardboard boxes are the go-to tool for diagnosing iPhone motherboard failures. 
 
@@ -198,7 +198,7 @@ Current sense is measured with a dedicated RP2040 ADC instead of passing through
 
 ### Programmable 0-500mA Current Limit
 
-[![](./img/bp5rev8/ilimit.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/bp5rev10-ilimit.jpg)](./img/bp5rev10/BusPirate-5-rev8.pdf)
 
 Since we've already got current consumption scaled to a 0-3.3volt output signal, wouldn't it be cheeky to pop a comparator behind it to make a programmable fuse? 
 
@@ -218,7 +218,7 @@ There you have it, a programmable fuse with just a couple extra parts.
 
 ### Backflow Prevention
 
-[![](./img/bp5rev8/backflow.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/bp5rev10-backflow.png)](./img/bp5rev10/BusPirate-5-rev8.pdf)
 
 A [backflow prevention switch](https://www.electro-tech-online.com/articles/simple-inexpensive-ideal-diode-mosfet-circuits.817/) helps protect all the little analog bits when an external voltage is applied to the VOUT/VREF pin. A [closely matched PNP pair](components/transistors-fets#dual-pnp-transistor-matched-pair-sot-363sc-70-6) (Q401A/B) creates a current mirror that controls a [P-channel MOSFET](components/transistors-fets#pmos-fet-2a-vgs-2-volts-sot-23) (Q402) high-side switch. When the voltage on VREF/VOUT is greater than the voltage in the PPSU, the PFET turns off. 
 
@@ -241,7 +241,7 @@ R408/R409 are two 33K resistors instead of a single resistor. This was done to r
 
 ## 1Gbit NAND Flash
 
-[![](./img/bp5rev8/sdcard.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/bp5rev10-nand-flash.png)](./img/bp5rev10/BusPirate-5-rev8.pdf)
 
 A [1 Gbit NAND flash chip](components-rev10/chips#nand-flash-1gbit-spi-updfn-8) is connected to the RP2040 via an SPI bus shared with the LCD and 74HC595 IO expanders. 
 
@@ -255,7 +255,7 @@ NAND flash appears as a readable and writable USB disk drive, however the speed 
 
 ## LCD
 
-[![](./img/bp5rev8/lcd.png)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/lcd.png)](./img/bp5rev10/BusPirate-5-rev8.pdf)
 
 A beautiful 240x320 pixel color [IPS (all angle viewing) LCD](components/leds#lcd-20-ips-lcd-240x320-st7789v-with-spi-interface-qt200h1201) acts as a pin label, displays the voltage on each pin and shows the current used by the programmable power supply unit. The LCD shares an SPI bus with the TF flash card and 74HC595 IO expanders. The display is already FCC certified, which doesn't exempt us from certification, but a bad LCD can spray radiation all over the spectrum causing us to fail.
 
@@ -265,19 +265,19 @@ The display is happy working at the maximum possible SPI speed of the RP2040. Un
 The background image is a bitmap converted to a C byte array and included in the firmware. Several open source font sets were converted to bitmaps to power the display.
 :::
 
-## 16 RGB LEDs
+## 18 RGB LEDs
 
-[![](./img/bp5rev8/leds.jpg)](./img/bp5rev8/BusPirate-5-rev8.pdf)
+[![](./img/bp5rev10/bp5rev10-leds.jpg)](./img/bp5rev10/BusPirate-5-rev8.pdf)
 
-It's customary to have an indicator LED, so to check that box we added 16 [SK6812 RGB LEDs](components/leds#led-sk6812-mini-e-led6028--3528). SK6812s are controlled by a time-based protocol over a single wire, which is normally a real pain to work with, but the RP2040's PIO module makes it a breeze. The LEDs are powered directly from USB voltage (~5volts), and require a 5volt input signal. The RP2040's 3.3volt output is converted to 5volts using one pin of the 74HCT245 level shifter.
+It's customary to have an indicator LED, so to check that box we added 18 [SK6812 RGB LEDs](components/leds#led-sk6812-mini-e-led6028--3528). SK6812s are controlled by a time-based protocol over a single wire, which is normally a real pain to work with, but the RP2040's PIO module makes it a breeze. The LEDs are powered directly from USB voltage (~5volts), and require a 5volt input signal. The RP2040's 3.3volt output is converted to 5volts using one pin of the 74HCT245 level shifter.
 
-SK6812s are found in cheap LED strips, so they're common, inexpensive and come in a variety of interesting form factors. 9 [MINI-E packaged LEDs](components/leds#led-sk6812-mini-e-led6028--3528) shine up through holes in the PCB to illuminate the case around the LCD. 7 [SIDE-A LEDs](components/leds#led-sk6812-side-a-4020--40x20x16mm) along the edge of the board give an under lighting effect. 
+SK6812s are found in cheap LED strips, so they're common, inexpensive and come in a variety of interesting form factors. 10 [MINI-E packaged LEDs](components/leds#led-sk6812-mini-e-led6028--3528) shine up through holes in the PCB to illuminate the case around the LCD. 8 [SIDE-A LEDs](components/leds#led-sk6812-side-a-4020--40x20x16mm) along the edge of the board give an under lighting effect. 
 
 :::tip
 There are two common footprints for SK6812-SIDE-A. The preferred part has evenly spaced pads that bend 90 degrees and extend up the back of the case. We have had the best success reflow soldering this footprint, and it is MUCH easier to hand rework than others.
 :::
 
-You might be thinking, 16 LEDs x 3 colors x 20mA is too much current for USB! You'd be totally right! Great care is taken in the firmware to ensure that the maximum current stays within the allowable limits for USB. 
+You might be thinking, 18 LEDs x 3 colors x 20mA is too much current for USB! You'd be totally right! Great care is taken in the firmware to ensure that the maximum current stays within the allowable limits for USB. 
 
 :::warning
 If you go hardware hacking, be aware that it is possible to far exceed the limits of your USB port when the LEDs are turned on at 100% brightness. It does look really cool though.
@@ -287,7 +287,7 @@ If you go hardware hacking, be aware that it is possible to far exceed the limit
 
 <div class="img-center">
 
-![](./img/bp5rev10/pcb-top.jpg)
+![](./img/bp5rev10/bp5rev10-3d-top.jpg)
 
 </div>
 
@@ -301,46 +301,40 @@ Previous revisions had three buttons (up/ok/down) to control a menu on the LCD. 
 
 <div class="img-center"> 
 
-![](./img/bp5rev8/bp-term2.png) 
+![](./img/bp5rev10/bp-term2.png) 
 
 </div>
 
 Bus Pirate 5 is used through a serial terminal. The optional VT100 mode supports color and a live statusbar view of the function and voltage on each pin, such as frequency generation and measurement. If an TF flash card is inserted, the Bus Pirate will save your terminal preferences for the next session.
 
 ## Other Documentation
-Bus Pirate 5 documentation is broken into [hardware](https://hardware.buspirate.com/introduction) and [firmware](https://firmware.buspirate.com/introduction) sections so it can be versioned easily with each update. Here's some other fun stuff you might enjoy.
-- [Component selection and sourcing](components/introduction)
-- [Case/enclosure](enclosure/fdm-shell)
-- [Cables](https://firmware.buspirate.com/overview/cables)
-- [Milled breadboard pins](https://firmware.buspirate.com/overview/milled-breadboard-pins)
-- [Hardware users guide](https://firmware.buspirate.com/overview/hardware)
-- [Firmware tutorials](https://firmware.buspirate.com/tutorial-basics/quick-setup)
-- [Command reference](https://firmware.buspirate.com/command-reference/all-commands)
-- [Firmware development](development/code) and [translation](development/translation)
-- [Manufacturing resources](category/manufacturing)
+import FooterDocs from '../_common/_footer/_footer-docs.md' 
+
+<FooterDocs/>
 
 ## Interactive BOM
 
-![](./img/bp5rev8/bp5-bom-rev8.png)
+![](./img/bp5rev10/bp5-bom-rev8.png)
 
 [Bus Pirate 5 REV8 interactive BOM](pathname:///bp5-rev8-bom.html). Created with [Interactive HTML BOM plugin](https://github.com/openscopeproject/InteractiveHtmlBom) for [KiCad](https://www.kicad.org/).
 
 
 ## Join the fun
+
 ### Get Bus Pirate 5
-- [Bus Pirate 5 assembled PCB preview release](https://dirtypcbs.com/store/designer/details/ian/6621/bus-pirate-5-preview-version-pcb-only)
-- [Bus Pirate Premium Probe Cable](https://dirtypcbs.com/store/designer/details/ian/6619/bus-pirate-5-probe-cable-kit)
-- [Bus Pirate Premium Auxiliary Cables](https://dirtypcbs.com/store/designer/details/ian/6620/auxilary-cable-kit)
-- Bus Pirate 5 and enclosure (coming soon!)
+import FooterGet from '../_common/_footer/_footer-get.md' 
+
+<FooterGet/>
 
 ### Files
-- [Bus Pirate 5 hardware repository](https://github.com/DangerousPrototypes/BusPirate5-hardware)
-- [Bus Pirate 5 firmware repository](https://github.com/DangerousPrototypes/BusPirate5-firmware)
+import FooterFiles from '../_common/_footer/_footer-files.md'
+
+<FooterFiles/>
 
 ### Community
-- [Forum](https://forum.buspirate.com)
-- [Blog](https://buspirate.com/) and mailing list
-- [Mastodon](https://mastodon.social/@buspirate)
-- [BlueSky](https://bsky.app/profile/buspirate.bsky.social)
-- [Twitter](https://twitter.com/dangerousproto)
+import FooterCommunity from '../_common/_footer/_footer-community.md'
+
+<FooterCommunity/>
+
+
 

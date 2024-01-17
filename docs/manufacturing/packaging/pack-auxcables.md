@@ -38,4 +38,4 @@ sidebar_label: 'Auxiliary Cables Pack'
 
 |**EAN**|**Contents**|**Version**|
 |-|-|-|
-|6098403367381|Auxiliary Cables|REV2|
+|6098403367381|Auxiliary Cables|REV0|

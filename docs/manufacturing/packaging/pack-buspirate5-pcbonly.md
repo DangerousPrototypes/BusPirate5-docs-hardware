@@ -1,8 +1,12 @@
 ---
-sidebar_position: 13
-sidebar_label: 'Bus Pirate 5 PCB Pack'
+sidebar_position: 1000
+sidebar_label: 'Bus Pirate 5 PCB only (EOL)'
 ---
 # Bus Pirate 5 PCB Only Package
+
+:::info
+**The preview set is no longer in production. **
+:::
 
 ## Contents
 

@@ -30,7 +30,7 @@ Bags with a pre-cut tear-open notch and a clear front window are significantly m
 |Product|Zipper Bag|
 |-|-|
 |Probe/Auxiliary Cables|7x10cm|
-|3DPIY Case Assembly/2mm Hex Wrench|4x6cm|
+|Button caps, bolts and 2mm Hex Wrench|4x6cm|
 
 Zipper bags for cables and small parts.
 
@@ -64,14 +64,15 @@ Our approach is to use large "waist" bands typically wrapped around bento box ta
 |CE Symbol|This symbol indicating CE compliance certification is required for most electronic products sold in the European Union. Some other countries also recognize the EU CE certification.|![](./img/eu-ce.png)|
 |RoHS indication|This symbol indicates RoHS compliance testing. Testing is required for most electronic products sold in the European Union. Some other countries also require RoHS compliance testing.|![](./img/rohs.png)|
 |China Export Symbol|This symbol is easily confused with the CE symbol above, but it means China Export. It is a meme stamp among Chinese exporters and has no official registration or regulation.|![](./img/china-export.png)|
-|Copyright statement||Where Labs LLC © 2023|
+|Copyright statement||Where Labs LLC © 2024|
 
 ### EAN Numbers
-|**EAN**|**Contents**|
-|-|-|
-|6098403367367|Bus Pirate 5 (PCB & enclosure)|
-|6098403367374|Probe Cable|
-|6098403367381|Auxiliary Cables|
-|6098403367398|Bus Pirate 5 (PCB only)|
+|**EAN**|**Contents**|**Note**|
+|-|-|-|
+|6098403367367|Bus Pirate 5 REV10 with enclosure|Active|
+|6098403367374|Probe Cable Kit REV0|Active|
+|6098403367381|Auxiliary Cable Kit REV0|Active|
+|TBD|Auxiliary Cable Kit REV1|Pending|
+|6098403367398|Bus Pirate 5 REV8 (preview, PCB only)|EOL|
 
 An EAN (Europe, 13 digits) or SKU (USA, 12 digits) is required for sales in online retail giants, but is also helps all involved to track inventory. We purchased a block of EAN numbers from a bulk reseller.

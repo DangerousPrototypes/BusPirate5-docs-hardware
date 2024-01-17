@@ -7,6 +7,6 @@ sidebar_label: 'Introduction'
 
 ![](./img/bp-rgb-dark.jpg)
 
-![](./img/bp5rev10-bottom.jpg)
+![](./img/bp5-rev10-3d-bottom.jpg)
 
-![](./img/bp5rev10-top.jpg)
+![](./img/bp5rev10-3d-top.jpg)

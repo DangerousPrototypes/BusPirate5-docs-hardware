@@ -8,14 +8,6 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 
 Every Bus Pirate is lovingly tested by our crack team before it ships. The Bus Pirate firmware has a self-test that will help make sure no failed components are on the board before we ship.
 
-## Insert TF flash card
-
-- Insert an TF flash card. If **a formatted and mountable TF flash card is not inserted the TF flash card test will fail**. 
-
-:::caution
-The test will work without an TF flash card, but the TF flash card section of the self-test will fail.
-:::
-
 ## Start the self-test
 
 <BrowserWindow>
@@ -50,12 +42,8 @@ PASS :)<br/>
 
 <BrowserWindow>
 <span className="bp-info">
-TF FLASH CARD: NOT DETECTED. ERROR!<br/>
+PSU: CODE 3. ERROR!<br/>
 ...<br/>
 ERRORS: 1<br/>
 FAIL! :(</span>
 </BrowserWindow>
-
-:::caution
-The test will work without an TF flash card, but the TF flash card section of the self-test will fail.
-:::
