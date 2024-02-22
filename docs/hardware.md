@@ -61,7 +61,7 @@ Bus Pirate 5 is designed to eliminate the frustrating parts of hacking and hardw
 
 ## RP2040
 
-[![](./img/bp5rev10/bp5rev10-micro-rp2040.jpg)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf)
+[![](./img/bp5rev10/bp5rev10-micro-rp2040.jpg)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf)
 
 It's like the RP2040 was designed for a Bus Pirate. Two ARM cores, cheap external flash storage  - and the 8 PIO state machines are a true hardware interface to just about any esoteric protocol. No more bit-banged software libraries!
 
@@ -71,7 +71,7 @@ We paired the RP2040 with a [128Mbit flash chip](/components/chips#flash-128mbit
 
 ### Output Expander
 
-[![](./img/bp5rev10/bp5rev10-dio-expand.jpg)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf) 
+[![](./img/bp5rev10/bp5rev10-dio-expand.jpg)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf) 
 
 While the RP2040 is an amazing chip that's fun to work with, we struggled with the low pin count. Two [74HC595 shift registers](/components/chips#74hc595-shift-register-tssop-16) (U501/U502) inartfully clamped to a shared SPI bus give an extra 16 outputs to control hardware on the board. Currently these pins control the LCD backlight, toggle options in the programmable power supply unit, enable pull-up resistors and select channels on the analog multiplexer - slow tasks that lend themselves to serial to parallel output.
 
@@ -83,7 +83,7 @@ Some control signals are translated to 5volts so we can fit a 74HC(T)4066 and 74
 
 ### ADC Expander
 
-[![](./img/bp5rev10/bp5rev10-adc-expand.jpg)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf)
+[![](./img/bp5rev10/bp5rev10-adc-expand.jpg)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf)
 
 Live voltage measurement on every pin was an absolute feature requirement for Bus Pirate 5. We want to to see whats happening at a glance, not perform bizarre and uncomfortable acrobatics with multimeter probes. 
 
@@ -99,11 +99,11 @@ Op-amps are pretty delicate, and tend to die if a voltage is connected while the
 
 ## 8 IO Units
 
-[![](./img/bp5rev10/bp5rev10-buffers.jpg)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf)
+[![](./img/bp5rev10/bp5rev10-buffers.jpg)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf)
 
 ### 1.2-5volt Buffers
 
-[![](./img/bp5rev10/buffer-detail.png)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf)
+[![](./img/bp5rev10/buffer-detail.png)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf)
 
 IO pins are fitted with [74LVC1T45 bidirectional buffers](/components/chips#74lvc1t45-bi-directional-buffer-sc70-6sot363), we call this chip 'the bulldozer'. Half of the buffer is powered at 3.3volts to interface the RP2040. The other half is powered from the VREF/VOUT pin at 1.2-5volts to interface with the outside world. 74LVC1T45 has great specs for hacking, like 5.5volt tolerant pins and a feature that disables everything when either half of the buffer is unpowered.
 
@@ -131,7 +131,7 @@ Revision 10 is fitted with buffers made by WuXi I-Core, a Chinese domestically m
 
 ### Toggleable Pull-up Resistors
 
-[![](./img/bp5rev10/bp5rev10-pullup.png)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf) 
+[![](./img/bp5rev10/bp5rev10-pullup.png)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf) 
 
 Each IO pin has a toggleable [10K pull-up resistor](/components/passives#resistor-arrays-5-0402x4-convex). Onboard pull-ups are controlled by eight [SI2301](/components/transistors-fets#pmos-fet-2a-vgs-1-volts-sot-523) PFETs with a very low (<1volt) gate threshold voltage. Pull-ups are powered through the VOUT/VREF pin.
 
@@ -172,7 +172,7 @@ The 1mm 9 pin connector mates with 'SH' style cables.
 
 ## Programmable Power Supply Unit
 
-[![](./img/bp5rev10/bp5rev10-ppsu.jpg)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf)
+[![](./img/bp5rev10/bp5rev10a-ppsu.png)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf)
 
 The bulldozer IO buffers run from 1.2 to 5volts, they need a power supply to match. The programmable power supply unit is another killer feature of Bus Pirate 5. 
 - 1-5volts adjustable output, 400mA max
@@ -182,7 +182,7 @@ The bulldozer IO buffers run from 1.2 to 5volts, they need a power supply to mat
 
 ### Adjustable Output 1 to 5volts
 
-[![](./img/bp5rev10/bp5rev10-vreg.png)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf)
+[![](./img/bp5rev10/bp5rev10-vreg.png)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf)
 
 The heart of the programmable power supply is a 0.8 to 5volt [adjustable output voltage regulator](/components/voltage-regulators#adjustable-ldo-vreg-with-08v-to-50v-output-sot-23-5) (U403). Normally fixed resistor values set the output voltage of an adjustable regulator, but we've given it programmable output [by margining](https://e2e.ti.com/blogs_/archives/b/precisionhub/posts/give-your-voltage-regulator-the-margin-it-deserves) the feedback pin with an RP2040 pulse width modulator. The PWM output of the RP2040 is filtered through a 10K resistor (R414) and 100nF capacitor (C415), then buffered with an op-amp (U603).
 
@@ -212,7 +212,7 @@ A common 1.25V-5V adjustable regulator can be used with the correct resistor val
 
 ### Current Sense
 
-[![](./img/bp5rev10/bp5rev10-isense.png)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf)
+[![](./img/bp5rev10/bp5rev10-isense.png)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf)
 
 Current consumption can be used as a proxy to debug a circuit. Is there a short? Is this chip even running? This is certainly evident in the Shenzhen mobile phone repair markets where current meters taped into cardboard boxes are the go-to tool for diagnosing iPhone motherboard failures. 
 
@@ -228,7 +228,7 @@ Beginning with REV10 we use an 'A' graded op-amp with lower maximum input offset
 
 ### Programmable 0-500mA Current Limit
 
-[![](./img/bp5rev10/bp5rev10-ilimit.jpg)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf)
+[![](./img/bp5rev10/bp5rev10-ilimit.jpg)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf)
 
 Since we've already got current consumption scaled to a 0-3.3volt output signal, wouldn't it be cheeky to pop a comparator behind it to make a programmable fuse? 
 
@@ -248,7 +248,7 @@ There you have it, a programmable fuse with just a couple extra parts.
 
 ### Backflow Prevention
 
-[![](./img/bp5rev10/bp5rev10-backflow.png)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf)
+[![](./img/bp5rev10/bp5rev10a-backflow.png)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf)
 
 A [backflow prevention switch](https://www.electro-tech-online.com/articles/simple-inexpensive-ideal-diode-mosfet-circuits.817/) helps protect all the little analog bits when an external voltage is applied to the VOUT/VREF pin. A [closely matched PNP pair](/components/transistors-fets#dual-pnp-transistor-matched-pair-sot-363sc-70-6) (Q401A/B) creates a current mirror that controls a [P-channel MOSFET](/components/transistors-fets#pmos-fet-2a-vgs-2-volts-sot-23) (Q402) high-side switch. When the voltage on VREF/VOUT is greater than the voltage in the PPSU, the PFET turns off. 
 
@@ -271,7 +271,7 @@ R408/R409 are two 33K resistors instead of a single resistor. This was done to r
 
 ## 1Gbit NAND Flash
 
-[![](./img/bp5rev10/bp5rev10-nand-flash.png)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf)
+[![](./img/bp5rev10/bp5rev10-nand-flash.png)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf)
 
 A [1 Gbit NAND flash chip](components-rev10/chips#nand-flash-1gbit-spi-updfn-8) is connected to the RP2040 via an SPI bus shared with the LCD and 74HC595 IO expanders. NAND flash is cheap and commonly used in removable storage, but it's also messy and prone to error. Bad block detection/marking and wear leveling all need to be managed in the RP2040 or the chip will die an untimely death.
 
@@ -285,7 +285,7 @@ NAND flash appears as a readable and writable USB disk drive, however the speed 
 
 ## LCD
 
-[![](./img/bp5rev10/lcd.png)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf)
+[![](./img/bp5rev10/lcd.png)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf)
 
 A beautiful 240x320 pixel color [IPS (all angle viewing) LCD](/components/leds#lcd-20-ips-lcd-240x320-st7789v-with-spi-interface-qt200h1201) acts as a pin label, displays the voltage on each pin and shows the current consumption of the programmable power supply unit. The LCD shares an SPI bus with the NAND flash and 74HC595 IO expanders. The display is already FCC certified, which doesn't exempt us from certification, but a bad LCD can spray radiation all over the spectrum causing us to fail.
 
@@ -295,7 +295,7 @@ The LCD background image is a bitmap converted to a C byte array and included in
 
 ## 18 RGB LEDs
 
-[![](./img/bp5rev10/bp5rev10-leds.jpg)](./img/bp5rev10/buspirate-5-rev10-schematic.pdf)
+[![](./img/bp5rev10/bp5rev10-leds.jpg)](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf)
 
 It's customary to have an indicator LED, so to check that box we added 18 [SK6812 RGB LEDs](/components/leds#led-sk6812-mini-e-led6028--3528). SK6812s are controlled by a time-based protocol that can be a real pain to work with, but the RP2040's PIO module makes it a breeze. The LEDs are powered directly from USB voltage (~5volts), and require a 5volt input signal. The RP2040's 3.3volt output is converted to 5volts using one pin of the 74HCT245 level shifter.
 
@@ -327,11 +327,11 @@ Previous revisions had three buttons (up/ok/down) to control a menu on the LCD. 
 
 ## Interactive BOM
 
-[![](./img/bp5rev10/bp5-bom-rev10.png)](pathname:///bp5-rev10-bom.html)
+[![](./img/bp5rev10/bp5-bom-rev10.png)](pathname:///bp5-rev10a-bom.html)
 
-- [Interactive BOM](pathname:///bp5-rev10-bom.html). Created with [Interactive HTML BOM plugin](https://github.com/openscopeproject/InteractiveHtmlBom) for [KiCad](https://www.kicad.org/).
-- [Schematic](./img/bp5rev10/buspirate-5-rev10-schematic.pdf) (PDF)
-- [Component placement](./img/bp5rev10/buspirate-5-rev10-placement.pdf) (PDF)
+- [Interactive BOM](pathname:///bp5-rev10a-bom.html). Created with [Interactive HTML BOM plugin](https://github.com/openscopeproject/InteractiveHtmlBom) for [KiCad](https://www.kicad.org/).
+- [Schematic](./img/bp5rev10/buspirate-5-rev10a-schematic.pdf) (PDF)
+- [Component placement](./img/bp5rev10/buspirate-5-rev10a-placement.pdf) (PDF)
 
 ## Get Bus Pirate 5
 import FooterGet from '/_common/_footer/_footer-get.md' 

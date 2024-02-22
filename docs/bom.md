@@ -3,7 +3,7 @@ sidebar_position: 5
 sidebar_label: 'Bill  of Materials'
 ---
 
-# Bill of Materials REV10
+# Bill of Materials REV10(a)
 
 ![Boxes with reels of components ready for assembly](./img/bom-rev10.jpg)
 
@@ -60,18 +60,18 @@ REV10 started as a [BOM cleanup](https://forum.buspirate.com/t/analog-parts-note
 | Ta-i Technology (大毅科技)| RLP25FEER200 | 2515| 0R2 ±1% 2W | 4000|SZRCD|
 | FH(风华)  | CBW201209U300T | 0805| 1.5A Ferrite Bead| 4000|SZLCSC|Part, Manuf|
 | CBI (创基)| 1N4148WT| SOD-523 | 100V 150mA | 3000|CBI (创基)|Package|
-| DIODES(美台)| BAS40-05T-7-F|SOT-523|Schottky Diode x 2| 3000|SZLCSC|New|
-| CBI (创基)| 2N7002| SOT-23|NFET| 3000|CBI (创基)|
+| CBI (创基)| BAS40-05T-7-F|SOT-523|Schottky Diode x 2| 3000|CBI (创基)|New|
+| CBI (创基)| MMBT7002K | SOT-23|NFET| 3000|CBI (创基)|
 | CBI (创基)| BC2301(2.8A) | SOT-523|PFET| 3000|CBI (创基)|Part, Package, Manuf|
 | CBI (创基)| MMDT3906| SOT-363/SC-70-6 |Dual PNP| 3000|CBI (创基)|
 | DIODES(美台)| BCM857| SOT-363/SC-70-6 |Dual PNP matched pair| 3000|SZLCSC|
 | YXC (扬兴晶振) | X322512MSB4SI| 3225| 12MHz ±10ppm 20pF| 3000|Navia|
 | MICRONE(南京微盟) | ME6211A33PG-N | SOT-89-3|3.3V VREG| 1000|Navia|
 | DIODES(美台)| AP2127K-ADJTRG1| SOT-23-5|0.8V-5.5V 400mA VREG| 3000|Navia|
-| Gainsil(聚洵) | LMV321 | SOT-23-5|R2R op-amp| 3000|SZLCSC|Part, Footprint, Manuf|
-| Gainsil(聚洵) | LMV321A (GS321A) | SOT-23-5|R2R op-amp A grade| 3000|SZLCSC|Part, Footprint, Manuf|
-| HGSemi | LMV324 | TSSOP-14 |R2R op-amp x 4| 3000|SZLCSC|New|
-| HGSemi | LMV331 (HGV331) | SOT-23-5|Comparator| 3000|SZLCSC|Part, Footprint, Manuf|
+| Gainsil(聚洵) | LMV321 | SOT-23-5|R2R op-amp| 3000|Gainsil(聚洵)|Part, Footprint, Manuf|
+| Gainsil(聚洵) | LMV321A (GS321A) | SOT-23-5|R2R op-amp A grade| 3000|Gainsil(聚洵)|Part, Footprint, Manuf|
+| Gainsil(聚洵) | LMV324 (GS324MT)| TSSOP-14 |R2R op-amp x 4| 3000|Gainsil(聚洵)|New|
+| Gainsil(聚洵) | LMV331 (GSV331) | SOT-23-5|Comparator| 3000|Gainsil(聚洵)|Part, Footprint, Manuf|
 | Raspberry Pi| RP2040| QFN-56|Microcontroller|500|SZLCSC|
 | Winbond | W25Q128JVSIQ| SOP-8 |128Mbit Flash|2000|SZLCSC|
 | Micron | MT29F1G01ABAFDWB-IT:F|UPDFN-8|1Gbit NAND flash|4000|SZLCSC|New|

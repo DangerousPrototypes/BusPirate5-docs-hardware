@@ -20,7 +20,7 @@ import FooterCart from '/_common/_footer/_footer-cart.md'
 ## Change Log
 - Preview production batch
 
-##Bill of Materials
+## Bill of Materials
 
 | Brand | Part | Package | Description| Reel Quantity | Supplier |
 |-|-|-|-|-|-|
