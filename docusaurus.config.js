@@ -67,7 +67,7 @@ const config = {
         items: [
           {
             to: 'https://buspirate.com',
-            label: 'Bus Pirate v5',
+            label: 'Bus Pirate',
             position: 'left',
           },
           {
