@@ -5,6 +5,15 @@ sidebar_label: 'Breadboard Pins'
 
 # Milled Breadboard Pins
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/pin-milled-v1.jpg)
 
 Custom milled pins connect the Bus Pirate DuPont-style 2.54mm female connectors to a breadboard or pin header. We designed these little pins after searching for better way to connect to prototype boards and breakout headers, things that just don’t cooperate with probe hooks intended to grab onto IC legs.

@@ -5,6 +5,15 @@ sidebar_label: 'Analog'
 
 # Analog Components
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/analog.jpg)
 
 ## Op-amp rail to rail SOT-23-5

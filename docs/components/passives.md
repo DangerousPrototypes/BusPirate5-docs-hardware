@@ -5,6 +5,15 @@ sidebar_label: 'Passives'
 
 # Passive components
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/passives2.jpg)
 
 ## Resistors 1% 0402

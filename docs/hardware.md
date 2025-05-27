@@ -6,6 +6,15 @@ slug: /
 
 # Bus Pirate 5, 5XL, 6 Hardware
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/bp5rev10/bp5rev10-cover-angle.jpg)
 
 The Bus Pirate is an open-source hardware debugging tool that converts simple commands into common bus protocols such as 1-Wire, I2C, SPI, UART, several LEDs and more. Send commands to a chip or sensor and get the response, without writing a line of code. 

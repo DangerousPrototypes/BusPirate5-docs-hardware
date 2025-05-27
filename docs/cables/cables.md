@@ -5,6 +5,15 @@ sidebar_label: 'Cables'
 
 # Cables
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/cable-wire.jpg)
 
 All Bus Pirate cables are made with super soft and flexible premium silicone coated wire. The inner strands are very fine tinned copper. 22AWG has 60 strands 0.08mm thick (bottom), compared to 8-12 strands in common wires (top). The silicone coating has a very nice feel, and tolerates high heat and chemicals.

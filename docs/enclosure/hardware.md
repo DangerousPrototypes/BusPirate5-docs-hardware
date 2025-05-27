@@ -5,6 +5,15 @@ sidebar_label: 'Hardware'
 
 # Hardware
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 Common hardware for all case versions.
 
 ## SC121 button cap

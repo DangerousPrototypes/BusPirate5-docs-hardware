@@ -5,6 +5,15 @@ sidebar_label: 'Final Assembly'
 
 # Bus Pirate 5 Final Assembly
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/bp5-full-frontal.jpg)
 
 ## Materials

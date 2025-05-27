@@ -5,6 +5,15 @@ sidebar_label: 'SLA Shell'
 
 # SLA Shell
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ## SLA 3D printed shell
 ![SLA printed case made](./img/slav10.jpg)
 

@@ -56,6 +56,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'old_site',
+        content:
+          '<b>This site is no loner maintained. <a href="https://docs.buspirate.com">Visit the new Bus Pirate docs site</a>.</b>',
+        backgroundColor: '#000000',
+        textColor: '#ec2a35',
+        isCloseable: false,
+      }, 
       // Replace with your project's social card
       image: 'img/danger.png',
       navbar: {

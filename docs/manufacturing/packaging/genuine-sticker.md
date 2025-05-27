@@ -5,6 +5,15 @@ sidebar_label: 'Scratch & Sniff Sticker'
 
 # Scratch & Sniff Sticker
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/stickers.png)
 
 Four styles of scratch and sniff "genuine" stickers seal the Bus Pirate anti-static bag. Lightly rub the sticker to smell the custom Bus Pirate 5 scent.

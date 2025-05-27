@@ -4,6 +4,15 @@ sidebar_label: 'Bus Pirate 5 Pack'
 ---
 # Bus Pirate 5 Package
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/bp5rev10-retail-pack.jpg)
 
 import FooterCart from '/_common/_footer/_footer-cart.md' 

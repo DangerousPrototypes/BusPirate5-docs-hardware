@@ -5,6 +5,15 @@ sidebar_label: 'Switches'
 
 # Switches
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/switches.jpg)
 
 ## SPST 4.2x3.2mm

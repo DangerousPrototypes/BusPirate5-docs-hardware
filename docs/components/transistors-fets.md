@@ -5,6 +5,15 @@ sidebar_label: 'Transistors and MOSFETs'
 
 # Transistors and MOSFETs
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/transistors.jpg)
 
 ## Consolidating suppliers

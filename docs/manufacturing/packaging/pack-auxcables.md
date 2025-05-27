@@ -4,6 +4,15 @@ sidebar_label: 'Auxiliary Cables Pack'
 ---
 # Auxiliary Cables Package
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/cable-a.jpg)
 
 import FooterCart from '/_common/_footer/_footer-cart.md' 

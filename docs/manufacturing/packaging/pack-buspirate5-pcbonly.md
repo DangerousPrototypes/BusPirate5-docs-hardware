@@ -4,6 +4,15 @@ sidebar_label: 'Bus Pirate 5 PCB only (EOL)'
 ---
 # Bus Pirate 5 PCB Only Package
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 :::info
 **Bus Pirate 5 REV8 preview is no longer in production. [See the latest version](/).**
 :::

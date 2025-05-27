@@ -5,6 +5,15 @@ sidebar_position: 2
 
 # Prepare Component Position File
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ## Generate Placement Files in KiCad
 ![Export component positions from the KiCad PCB editor](./img/export1-sm.png)
 

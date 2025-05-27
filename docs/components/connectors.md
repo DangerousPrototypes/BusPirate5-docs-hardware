@@ -5,6 +5,15 @@ sidebar_label: 'Connectors'
 
 # Connectors
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/connectors.jpg)
 
 ## USB type C connector 16 pin

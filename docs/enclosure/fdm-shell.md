@@ -5,6 +5,15 @@ sidebar_label: 'FDM Shell'
 
 # FDM Shell
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ## FDM 3D printed shell
 
 ![3D Printed case made from PETG](./img/enclosure-petg.jpg)

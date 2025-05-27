@@ -5,6 +5,15 @@ sidebar_label: 'Printed Circuit Board'
 
 # Printed Circuit Board
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/pcb.jpg)
 
 ## PCB 4 layers 60x60mm

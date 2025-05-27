@@ -5,6 +5,15 @@ sidebar_label: 'Voltage Regulators'
 
 # Voltage Regulators
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/vreg.jpg)
 
 ## LDO voltage regulator 3.3volts 200mA+ 1% accuracy SOT-89

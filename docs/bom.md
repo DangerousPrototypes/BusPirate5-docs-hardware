@@ -5,6 +5,15 @@ sidebar_label: 'Bill  of Materials'
 
 # Bill of Materials REV10(a)
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![Boxes with reels of components ready for assembly](./img/bom-rev10.jpg)
 
 REV10 is the first production version (from January 2024) that ships in an enclosure. Find your revision number on the PCB near the production date (bottom) and the 10 pin connector (top). 

@@ -5,6 +5,15 @@ sidebar_label: 'LEDs and Display'
 
 # LEDs and Display
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/lcd-cover.jpg)
 
 ## LCD 2.0" IPS LCD 240x320 ST7789V with SPI interface (QT200H1201)

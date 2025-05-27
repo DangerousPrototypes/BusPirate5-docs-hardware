@@ -5,6 +5,15 @@ sidebar_label: 'Chips'
 
 # Chips
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/chips2.jpg)
 
 ## Microcontroller RP2040 QFN-56

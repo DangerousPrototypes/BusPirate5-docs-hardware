@@ -4,6 +4,15 @@ sidebar_label: 'Materials'
 ---
 # Packaging Materials
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ## Finger Cots
 ![](./img/fingercots.jpg)
 

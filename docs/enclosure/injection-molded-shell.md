@@ -5,6 +5,15 @@ sidebar_label: 'Injection Molded'
 
 # Injection Molded Enclosure
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/enclosure-top.jpg)
 
 ## Components

@@ -5,6 +5,15 @@ sidebar_label: 'Crystal'
 
 # Crystal
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/crystal2.jpg)
 
 ## Crystal 12MHz 18pf - 20pF, SMD3225-4 (4 pin)

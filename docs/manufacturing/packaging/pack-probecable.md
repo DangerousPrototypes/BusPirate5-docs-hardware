@@ -4,6 +4,15 @@ sidebar_label: 'Probe Cable Pack'
 ---
 # Probe Cable Package
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/cable-p.jpg)
 
 import FooterCart from '/_common/_footer/_footer-cart.md' 

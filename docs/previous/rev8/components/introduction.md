@@ -5,6 +5,15 @@ sidebar_label: 'Introduction'
 
 # Bus Pirate 5 Component Guide REV 8
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 :::info
 **Bus Pirate 5 REV8 preview is no longer in production. [See the latest version](/).**
 :::

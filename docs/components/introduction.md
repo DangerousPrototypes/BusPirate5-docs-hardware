@@ -5,6 +5,15 @@ sidebar_label: 'Introduction'
 
 # Bus Pirate 5 REV10 Component Guide
 
+
+
+import OldSiteWarning from '/old-site-warning.md'
+
+<OldSiteWarning/>
+
+
+
+
 ![](./img/bp5rev10-cover-2.jpg) 
 
 ![](./img/bp5-rev10-3d-bottom.jpg)
