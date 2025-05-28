@@ -79,34 +79,28 @@ const config = {
             position: 'left',
           },
           {
-            to: 'https://hardware.buspirate.com',
-            //type: 'docSidebar',
-            //sidebarId: 'tutorialSidebar',
+            to: 'https://buspirate.com/get',
+            label: 'Get',
             position: 'left',
-            label: 'Hardware',
-          },		            
+          },            
           {
-            to: 'https://firmware.buspirate.com',
+            to: 'https://docs.buspirate.com',
             //type: 'docSidebar',
             //sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Firmware',
-          }, 
+            label: '*New Docs*',
+          },		            
           {
             to: 'https://forum.buspirate.com',
             label: 'Forum',
             position: 'left',
           },     
-          {
-            to: 'https://buspirate.com/get',
-            label: 'Get',
-            position: 'left',
-          },  
+ 
           {
             to: 'https://buspirate.com/contact',
             label: 'Contact',
             position: 'left',
-          },                           
+          },                        
           /*{to: '/blog', label: 'Blog', position: 'left'},*/
           {
             href: 'https://github.com/DangerousPrototypes',
@@ -127,8 +121,8 @@ const config = {
             title: 'Distributors',
             items: [
               {
-                label: 'Dirty PCBs',
-                to: 'https://dirtypcbs.com/store/browse/bus-pirate',
+                label: 'Get Bus Pirate',
+                to: 'https://buspirate.com/get',
               },
             ],
           },
@@ -136,13 +130,9 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Hardware',
-                to: 'https://hardware.buspirate.com',
-              },
-              {
-                label: 'Firmware',
-                to: 'https://firmware.buspirate.com',
-              },			  
+                label: '*New Docs*',
+                to: 'https://docs.buspirate.com',
+              },	  
             ],
           },
           {
